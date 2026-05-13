@@ -6,21 +6,13 @@
     <title>Turkey - Computational Antitrust Dashboard</title>
     <link rel="stylesheet" href="assets/country-dashboard.css">
 </head>
-<body>
+<body data-country-name="Turkey">
     <div id="app"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assets/js/country-registry.js"></script>
+    <script src="assets/country-dashboard-data.js"></script>
     <script src="assets/country-dashboard.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const isoCode = 'TR';
-            const projects = generateDefaultProjectsForCountry('Turkey', isoCode);
-            new CountryDashboard({
-                country: 'Turkey',
-                isoCode,
-                projects,
-            });
-        });
-    </script>
+    <script src="assets/country-page.js"></script>
 </body>
 </html>

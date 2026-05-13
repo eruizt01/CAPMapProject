@@ -1,0 +1,16 @@
+{
+  "name": "capmapproject",
+  "private": true,
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "eslint assets/js/**/*.js Countries/assets/**/*.js test/**/*.js *.config.js",
+    "format:check": "prettier --check \"assets/js/**/*.js\" \"Countries/assets/**/*.js\" \"test/**/*.js\" \"*.json\" \"*.js\"",
+    "format:write": "prettier --write \"assets/js/**/*.js\" \"Countries/assets/**/*.js\" \"test/**/*.js\" \"*.json\" \"*.js\"",
+    "test:smoke": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "eslint": "^9.24.0",
+    "prettier": "^3.5.3"
+  }
+}

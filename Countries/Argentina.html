@@ -6,30 +6,13 @@
     <title>Argentina - Computational Antitrust Dashboard</title>
     <link rel="stylesheet" href="assets/country-dashboard.css">
 </head>
-<body>
+<body data-country-name="Argentina">
     <div id="app"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assets/js/country-registry.js"></script>
+    <script src="assets/country-dashboard-data.js"></script>
     <script src="assets/country-dashboard.js"></script>
-    <script>
-       document.addEventListener('DOMContentLoaded', () => {
-            new CountryDashboard({
-                country: 'Argentina',
-                isoCode: 'AR',
-                projects: [
-                    {
-                        name: 'Mordelon',
-                        category: 'Document Management',
-                        report: '2022 Annual Report',
-                        year: 2022,
-                        details: 'Internal case processing system that supports Argentina\'s competition authority with secure routing, document handling, and audit-ready workflows.'
-                    }
-                ],
-                yearDownloads: {
-                    '2022': 'Reports/Argentina - 1st. Report.pdf'
-                }
-            });
-        });
-    </script>
+    <script src="assets/country-page.js"></script>
 </body>
 </html>

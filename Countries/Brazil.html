@@ -6,86 +6,13 @@
     <title>Brazil - Computational Antitrust Dashboard</title>
     <link rel="stylesheet" href="assets/country-dashboard.css">
 </head>
-<body>
+<body data-country-name="Brazil">
     <div id="app"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assets/js/country-registry.js"></script>
+    <script src="assets/country-dashboard-data.js"></script>
     <script src="assets/country-dashboard.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            new CountryDashboard({
-                country: 'Brazil',
-                isoCode: 'BR',
-                projects: [
-                    {
-                        name: 'Brazil Digital Evidence Hub',
-                        category: 'Data Processing',
-                        report: '2022 Annual Report',
-                        year: 2022,
-                        details: 'Centralized platform empowering Brazil\'s competition authority to collect, process, and analyze digital evidence from large platforms and marketplaces.'
-                    },
-                    {
-                        name: 'Market Signals Early Warning System',
-                        category: 'Case Analysis',
-                        report: '2023 Mid-Year Brief',
-                        year: 2023,
-                        details: 'Machine learning toolkit that screens procurement and pricing data to flag potential collusive behavior in Brazilian markets.'
-                    },
-                    {
-                        name: 'Algorithmic Self-Assessment Guide',
-                        category: 'Policy Support',
-                        report: '2025 Policy Outlook',
-                        year: 2025,
-                        details: 'Interactive guide that helps Brazilian firms self-assess algorithmic practices against competition policy guidance.'
-                    },
-                    {
-                        name: 'Case Insights Repository',
-                        category: 'Case Analysis',
-                        report: '2024 Strategic Review',
-                        year: 2024,
-                        details: 'Knowledge base that captures investigative insights, outcomes, and precedents across Brazil\'s antitrust cases.'
-                    },
-                    {
-                        name: 'Cerebro Detection Engine',
-                        category: 'Data Mining and Screening',
-                        report: '2024 Enforcement Dossier',
-                        year: 2024,
-                        details: 'Screening tools and econometric analysis to detect and investigate cartels operating in public procurement processes.'
-                    },
-                    {
-                        name: 'Cerebro Network Explorer',
-                        category: 'Network Analytics',
-                        report: '2024 Enforcement Dossier',
-                        year: 2024,
-                        details: 'Relationship graphs that assess firm ownership, board overlap, and tender participation to identify suspicious clusters.'
-                    },
-                    {
-                        name: 'Cerebro Collection Suite',
-                        category: 'Web Scraping',
-                        report: '2024 Enforcement Dossier',
-                        year: 2024,
-                        details: 'Automated web-scraping and ingestion pipelines that assemble procurement intelligence data for investigators.'
-                    },
-                    {
-                        name: 'Cerebro Document Classifier',
-                        category: 'Document Review',
-                        report: '2024 Enforcement Dossier',
-                        year: 2024,
-                        details: 'Machine learning applied to procurement documents to highlight potential signals of collusion or bid-rotation schemes.'
-                    },
-                    {
-                        name: 'Cartel Detection Sandbox',
-                        category: 'Document Management',
-                        report: '2023 Innovation Dossier',
-                        year: 2023,
-                        details: 'Secure experimentation environment providing anonymized datasets so analysts can prototype cartel detection algorithms.'
-                    }
-                ],
-                yearDownloads: {
-                    '2024': 'Reports/Brazil - 4th Report.pdf'
-                }
-            });
-        });
-    </script>
+    <script src="assets/country-page.js"></script>
 </body>
 </html>
