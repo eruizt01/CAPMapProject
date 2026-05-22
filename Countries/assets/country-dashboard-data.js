@@ -3310,6 +3310,7 @@
     Spain: {
       agencyYearDownloads: {
         ACCO: {
+          2022: "Reports/Spain 1st Report.pdf",
           2023: "Reports/Catalonia 2nd Report.pdf",
           2024: "Reports/Catalonia 3rd Report.pdf",
           2025: "Reports/Catalonia 4th Report.pdf",

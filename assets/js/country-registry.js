@@ -440,7 +440,7 @@
       pageAvailable: true,
       supported: true,
       aliases: ["ES"],
-      yearDownloads: { 2023: "Reports/Spain 2nd Report.pdf", 2024: "Reports/Spain 3rd Report.pdf", 2025: "Reports/Spain 4th Report.pdf" },
+      yearDownloads: { 2022: "Reports/Spain 1st Report.pdf", 2023: "Reports/Spain 2nd Report.pdf", 2024: "Reports/Spain 3rd Report.pdf", 2025: "Reports/Spain 4th Report.pdf" },
     },
     Sweden: {
       canonicalName: "Sweden",
