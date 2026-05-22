@@ -103,8 +103,7 @@
         {
           id: "armenia-8",
           name: "e-Compete",
-          category:
-            "Document Management: Third-party submissions; Search engine; Market Monitoring",
+          category: "Document Management: Third-party submissions; Search engine; Market Monitoring",
           report: "2nd. Annual Report",
           year: 2023,
           details:
@@ -133,8 +132,7 @@
           software: "Nuix Discover",
           ownershipModel: null,
           practiceArea: "Cartels",
-          challenges:
-            "Ensuring government agencies (data sources for screening) have specialized skills in-house to expertly process and handle data.",
+          challenges: "Ensuring government agencies (data sources for screening) have specialized skills in-house to expertly process and handle data.",
           notes: null,
           sourceRow: 9,
         },
@@ -301,8 +299,7 @@
           category: "Data Unit",
           report: "4th. Annual Report",
           year: 2025,
-          details:
-            "Strategic Data Analysis Unit and Data and Intelligence Branch",
+          details: "Strategic Data Analysis Unit and Data and Intelligence Branch",
           agency: "ACCC",
           software: null,
           ownershipModel: null,
@@ -368,8 +365,7 @@
           category: "Cartel Screening; Market Monitoring",
           report: "4th. Annual Report",
           year: 2025,
-          details:
-            "Implementing/piloting cartel-screening system and market-screening",
+          details: "Implementing/piloting cartel-screening system and market-screening",
           agency: "AFCA",
           software: null,
           ownershipModel: null,
@@ -406,11 +402,10 @@
           details:
             "Data mining and screening techniques to enhance the detection of signs of bid-rigging (goals: initiating new investigations and identifying markets that are more susceptible to collusion).",
           agency: "CADE",
-          software: null,
+          software: "Not informed",
           ownershipModel: null,
           practiceArea: "Bid Rigging",
-          challenges:
-            "AI training data, considering the reduced number of convicted cases; the developed techniques, given the institutional differences of jurisdictions, which can make it difficult to adapt techniques to each local reality; and the transparency of techniques, especially when its results are used for imposing sanctions.",
+          challenges: "AI training data, considering the reduced number of convicted cases; the developed techniques, given the institutional differences of jurisdictions, which can make it difficult to adapt techniques to each local reality; and the transparency of techniques, especially when its results are used for imposing sanctions.",
           notes: null,
           sourceRow: 26,
         },
@@ -423,13 +418,11 @@
           details:
             "Preliminary stages of development of tools aimed at speeding up investigations by automating procedural phases in case handlers’ workflow.",
           agency: "CADE",
-          software: null,
+          software: "Not informed",
           ownershipModel: null,
           practiceArea: "All-purpose",
-          challenges:
-            "Task automation can create biased chains – potentiated at the various links of the AI system — which require extra caution in its implementation.",
-          notes:
-            "Very generic mention about the automation of tasks performed by the authority's staff. Unclear whether any such automation had been deployed.",
+          challenges: "Task automation can create biased chains – potentiated at the various links of the AI system — which require extra caution in its implementation.",
+          notes: "Very generic mention about the automation of tasks performed by the authority's staff. Unclear whether any such automation had been deployed.",
           sourceRow: 27,
         },
         {
@@ -441,11 +434,10 @@
           details:
             "Tools to analyze procurements and detect anomalies and other evidence of bid rigging.",
           agency: "CADE",
-          software: null,
+          software: "Not informed",
           ownershipModel: null,
           practiceArea: "Bid Rigging",
-          challenges:
-            "With regular changing staff—within the project scope and in partnering agencies and government bodies—the challenges to recreate bonds and (re)build trust amongst partners became apparent.",
+          challenges: "With regular changing staff—within the project scope and in partnering agencies and government bodies—the challenges to recreate bonds and (re)build trust amongst partners became apparent.",
           notes: null,
           sourceRow: 28,
         },
@@ -458,14 +450,11 @@
           details:
             "Tools (screening tools and econometric analysis) to detect and investigate cartels operating in public procurement processes. They focus on information about firms (companies, location, IP addresses) and tenders (behavior).",
           agency: "CADE",
-          software:
-            "Mainstream data-science toolkit: jupyter notebooks, quartomarkdown documents, R and Python scripts. New tools: PoCs (proof of concepts) and prototypes of solutions incorporating more performant and secure languages like Rust into the data science workflow.",
+          software: "Mainstream data-science toolkit: jupyter notebooks, quartomarkdown documents, R and Python scripts. New tools: PoCs (proof of concepts) and prototypes of solutions incorporating more performant and secure languages like Rust into the data science workflow.",
           ownershipModel: null,
           practiceArea: "Bid Rigging",
-          challenges:
-            "Accessing and processing these datasets to facilitate detection of collusive behavior. Data must be selected and processed as close as possible to the needs of Cade’s anticartel core business. Developing methodologies and tools that empower case handlers in identifying companies engaged in illicit activities during ongoing investigations. Lack of skilled staff.",
-          notes:
-            "Future plans: Cerebro plans to employ natural language processing (NLP) and large language models (LLMs) to enhance the capabilities of procurement document processing, particularly in the search for documents' coincidences and other indirect communication evidence.",
+          challenges: "Accessing and processing these datasets to facilitate detection of collusive behavior. Data must be selected and processed as close as possible to the needs of Cade’s anticartel core business. Developing methodologies and tools that empower case handlers in identifying companies engaged in illicit activities during ongoing investigations. Lack of skilled staff.",
+          notes: "Future plans: Cerebro plans to employ natural language processing (NLP) and large language models (LLMs) to enhance the capabilities of procurement document processing, particularly in the search for documents' coincidences and other indirect communication evidence.",
           sourceRow: 29,
         },
         {
@@ -477,7 +466,7 @@
           details:
             "Network analytics: elucidate firms' societal compositions, potential shared decision boards, and the organization of tenders and bidders.",
           agency: "CADE",
-          software: null,
+          software: "Not informed",
           ownershipModel: null,
           practiceArea: "Bid Rigging",
           challenges: null,
@@ -493,11 +482,10 @@
           details:
             "Network analytics: elucidate firms' societal compositions, potential shared decision boards, and the organization of tenders and bidders.",
           agency: "CADE",
-          software: null,
+          software: "Not informed",
           ownershipModel: null,
           practiceArea: "Bid Rigging",
-          challenges:
-            "Need to simplify complex economic evidence for non-technical audiences, such as judges, to prevent misinterpretation. Lack of a dedicated workforce, relying instead on seconded staff Brazil’s public sector buying system, marked by cumbersome bureaucratic processes, severely restricts Cerebro project’s ability to acquire essential technologies, such as AI tokens and advanced analytical software, critical for scaling its data-driven capabilities.",
+          challenges: "Need to simplify complex economic evidence for non-technical audiences, such as judges, to prevent misinterpretation. Lack of a dedicated workforce, relying instead on seconded staff Brazil’s public sector buying system, marked by cumbersome bureaucratic processes, severely restricts Cerebro project’s ability to acquire essential technologies, such as AI tokens and advanced analytical software, critical for scaling its data-driven capabilities.",
           notes: null,
           sourceRow: 31,
         },
@@ -507,9 +495,9 @@
           category: "Network analytics",
           report: "4th. Annual Report",
           year: 2025,
-          details: "",
+          details: null,
           agency: "CADE",
-          software: null,
+          software: "Not informed",
           ownershipModel: null,
           practiceArea: "Bid Rigging",
           challenges: null,
@@ -524,7 +512,7 @@
           year: 2025,
           details: "Web scraping to collect information.",
           agency: "CADE",
-          software: null,
+          software: "Not informed",
           ownershipModel: null,
           practiceArea: "Bid Rigging",
           challenges: null,
@@ -540,7 +528,7 @@
           details:
             "Machine learning to analyze procurement documents for signs of collusion.",
           agency: "CADE",
-          software: null,
+          software: "Not informed",
           ownershipModel: null,
           practiceArea: "Bid Rigging",
           challenges: null,
@@ -556,7 +544,7 @@
           details:
             "Categorization of data along two main dimensions: firm-focused (such as office locations, IP addresses, and corporate affiliations) and tender-focused (including frequent co-bidders, “rabbit” firms, and regional winners).",
           agency: "CADE",
-          software: null,
+          software: "Not informed",
           ownershipModel: null,
           practiceArea: "Bid Rigging",
           challenges: null,
@@ -575,8 +563,7 @@
           software: "Selenium; PostgreSQL; NLP; Azure",
           ownershipModel: null,
           practiceArea: null,
-          challenges:
-            "Limited to selected outlets; requires keyword updates; possible notification overload",
+          challenges: "Limited to selected outlets; requires keyword updates; possible notification overload",
           notes: "Weekly email alerts to Deputy Superintendence officials.",
           sourceRow: 36,
         },
@@ -613,8 +600,7 @@
           ownershipModel: null,
           practiceArea: "Bid Rigging",
           challenges: null,
-          notes:
-            "ML tool not yet deployed. Preliminary talks for AI tool development for bid rigging. Forensic toolkit recently updated.",
+          notes: "ML tool not yet deployed. Preliminary talks for AI tool development for bid rigging. Forensic toolkit recently updated.",
           sourceRow: 38,
         },
       ],
@@ -846,8 +832,7 @@
           ownershipModel: null,
           practiceArea: "All-purpose",
           challenges: null,
-          notes:
-            "Plans to integrate machine learning for cartel detection in public procurement (not yet deployed).",
+          notes: "Plans to integrate machine learning for cartel detection in public procurement (not yet deployed).",
           sourceRow: 52,
         },
       ],
@@ -863,12 +848,10 @@
           details:
             "ERICCA: in-house system for screening public procurement data and identifying potential bid rigging. Uses unsupervised machine learning to cluster companies based on tender participation and applies statistical indicators (discount dispersion, identical offers, win-rate patterns) to detect suspicious bidding behavior.",
           agency: "ACCO",
-          software:
-            "Data sourced via Public Contracts Registry and Open Data portal.",
+          software: "Data sourced via Public Contracts Registry and Open Data portal.",
           ownershipModel: null,
           practiceArea: "Bid Rigging",
-          challenges:
-            "Limited data representativity (~250,000 tenders vs. total). Initial data obtained via web scraping before collaboration agreement.",
+          challenges: "Limited data representativity (~250,000 tenders vs. total). Initial data obtained via web scraping before collaboration agreement.",
           notes: null,
           sourceRow: 53,
         },
@@ -952,8 +935,7 @@
           software: "Neo4j",
           ownershipModel: "Third Party",
           practiceArea: null,
-          challenges:
-            "challenges ahead such as getting more precise data of the economic activities carried out by companies and their annual sales and accessing up-to-date data on the ownership relations each time a query is made",
+          challenges: "challenges ahead such as getting more precise data of the economic activities carried out by companies and their annual sales and accessing up-to-date data on the ownership relations each time a query is made",
           notes: null,
           sourceRow: 58,
         },
@@ -969,8 +951,7 @@
           software: null,
           ownershipModel: null,
           practiceArea: null,
-          challenges:
-            "The Intelligence Unit (‘IU’) of the Fiscalía Nacional Económica was launched in September 2020, and has a staff of three professionals, including two data scientists.",
+          challenges: "The Intelligence Unit (‘IU’) of the Fiscalía Nacional Económica was launched in September 2020, and has a staff of three professionals, including two data scientists.",
           notes: null,
           sourceRow: 59,
         },
@@ -1002,8 +983,7 @@
           software: null,
           ownershipModel: null,
           practiceArea: null,
-          challenges:
-            "Intelligence Unit (‘IU’), which is a multidisciplinary team within the Anti-Cartel Division, composed of a lawyer, a data scientist/economist, and a software engineer, that develops computational investigative tools to support and optimize cartel investigations. In 2025, the team is expected to grow stronger with the addition of two professionals specializing in economics and data science.",
+          challenges: "Intelligence Unit (‘IU’), which is a multidisciplinary team within the Anti-Cartel Division, composed of a lawyer, a data scientist/economist, and a software engineer, that develops computational investigative tools to support and optimize cartel investigations. In 2025, the team is expected to grow stronger with the addition of two professionals specializing in economics and data science.",
           notes: null,
           sourceRow: 61,
         },
@@ -1084,13 +1064,11 @@
           details:
             "Price monitoring and web-scraping tool collecting structured and unstructured e-commerce data to detect suspicious pricing patterns and support investigations",
           agency: "SIC",
-          software:
-            "Web-scraping bots (“robot hive” system), dashboard visualization tools (not specified)",
+          software: "Web-scraping bots (“robot hive” system), dashboard visualization tools (not specified)",
           ownershipModel: null,
           practiceArea: null,
           challenges: null,
-          notes:
-            "Used during VAT-free day to monitor appliances, apparel, sports supplies; provides descriptive statistics and pricing behavior analysis",
+          notes: "Used during VAT-free day to monitor appliances, apparel, sports supplies; provides descriptive statistics and pricing behavior analysis",
           sourceRow: 66,
         },
         {
@@ -1102,13 +1080,11 @@
           details:
             "Automated monitoring tool tracking regulatory projects published by state regulators and sending alerts when changes are detected",
           agency: "SIC",
-          software:
-            "Automated web monitoring and email notification system (not specified)",
+          software: "Automated web monitoring and email notification system (not specified)",
           ownershipModel: null,
           practiceArea: null,
           challenges: null,
-          notes:
-            "Designed to reduce manual monitoring workload of Competition Advocacy Group",
+          notes: "Designed to reduce manual monitoring workload of Competition Advocacy Group",
           sourceRow: 67,
         },
         {
@@ -1120,14 +1096,11 @@
           details:
             "Price monitoring and data analytics tool collecting supermarket website data to analyse historical pricing behaviour and detect potential anticompetitive conduct; planned expansion to automated alerts",
           agency: "SIC",
-          software:
-            "Web-scraping bots (“robot hive” system), dashboard visualization tools (not specified)",
+          software: "Web-scraping bots (“robot hive” system), dashboard visualization tools (not specified)",
           ownershipModel: null,
           practiceArea: null,
-          challenges:
-            "Initially limited coverage (1 store in 2021–2022); gradual expansion; large volumes of data.",
-          notes:
-            "Coverage expanded to 5 stores (planned 2023); future integration of automated alerts for potential anticompetitive conduct.",
+          challenges: "Initially limited coverage (1 store in 2021–2022); gradual expansion; large volumes of data.",
+          notes: "Coverage expanded to 5 stores (planned 2023); future integration of automated alerts for potential anticompetitive conduct.",
           sourceRow: 68,
         },
         {
@@ -1139,14 +1112,11 @@
           details:
             "Automated regulatory monitoring tool using NLP and classification models to detect regulatory projects that may impact competition and sending alerts when changes are detected",
           agency: "SIC",
-          software:
-            "Natural Language Processing (NLP); document vectorisation; classification model trained on historical advocacy decisions",
+          software: "Natural Language Processing (NLP); document vectorisation; classification model trained on historical advocacy decisions",
           ownershipModel: null,
           practiceArea: null,
-          challenges:
-            "Initial partial coverage of authorities; reliance on training data from prior concepts.",
-          notes:
-            "Monitoring coverage increased from 55.8% (38/68 authorities, July 2022) to 87.1% (60/68 authorities, April 2023); model trained on Competition Advocacy Group historical outputs.",
+          challenges: "Initial partial coverage of authorities; reliance on training data from prior concepts.",
+          notes: "Monitoring coverage increased from 55.8% (38/68 authorities, July 2022) to 87.1% (60/68 authorities, April 2023); model trained on Competition Advocacy Group historical outputs.",
           sourceRow: 69,
         },
         {
@@ -1158,14 +1128,11 @@
           details:
             "Price and airfare (Large retailer and Flights) monitoring tool generating alerts for potential anticompetitive practices",
           agency: "SIC",
-          software:
-            "Web-scraping and analytics system (not specified); alert-generation system.",
+          software: "Web-scraping and analytics system (not specified); alert-generation system.",
           ownershipModel: null,
           practiceArea: null,
-          challenges:
-            "Large-scale data processing (e.g., 9+ million airline ticket records); not specified further.",
-          notes:
-            "Flights module analysed 9M+ ticket data across 76 domestic routes; generated 180 alerts in 2023.",
+          challenges: "Large-scale data processing (e.g., 9+ million airline ticket records); not specified further.",
+          notes: "Flights module analysed 9M+ ticket data across 76 domestic routes; generated 180 alerts in 2023.",
           sourceRow: 70,
         },
         {
@@ -1177,14 +1144,11 @@
           details:
             "Automated regulatory monitoring tool using NLP and classification models to detect regulatory projects that may impact competition and sending alerts when changes are detected",
           agency: "SIC",
-          software:
-            "NLP processing; document vectorisation; classification model; automated notification system",
+          software: "NLP processing; document vectorisation; classification model; automated notification system",
           ownershipModel: null,
           practiceArea: null,
-          challenges:
-            "Model accuracy and notification quality improved over time; no explicit limitations reported.",
-          notes:
-            "Enhanced notification features (titles, deadlines, attachments); monitors 69 government entities.",
+          challenges: "Model accuracy and notification quality improved over time; no explicit limitations reported.",
+          notes: "Enhanced notification features (titles, deadlines, attachments); monitors 69 government entities.",
           sourceRow: 71,
         },
         {
@@ -1196,13 +1160,11 @@
           details:
             "Automated screening tool for detecting potential collusion patterns in public procurement datasets (SECOP I & II).",
           agency: "SIC",
-          software:
-            "Data analytics tool generating three types of alerts (technical stack not specified)",
+          software: "Data analytics tool generating three types of alerts (technical stack not specified)",
           ownershipModel: null,
           practiceArea: "Bid Rigging",
           challenges: null,
-          notes:
-            "Used by Elite Anti-Collusion Working Group; reduces time for mechanical dataset review.",
+          notes: "Used by Elite Anti-Collusion Working Group; reduces time for mechanical dataset review.",
           sourceRow: 72,
         },
         {
@@ -1214,14 +1176,11 @@
           details:
             "Media monitoring tool identifying news that may signal potential competition infringements",
           agency: "SIC",
-          software:
-            "Automated news scraping and notification system (not specified)",
+          software: "Automated news scraping and notification system (not specified)",
           ownershipModel: null,
           practiceArea: null,
-          challenges:
-            "Limited to selected media outlets; not specified further.",
-          notes:
-            "Sends daily alerts from major Colombian media (La W, RCN Radio, Las 2 Orillas).",
+          challenges: "Limited to selected media outlets; not specified further.",
+          notes: "Sends daily alerts from major Colombian media (La W, RCN Radio, Las 2 Orillas).",
           sourceRow: 73,
         },
         {
@@ -1234,8 +1193,7 @@
             "Monitoring and Compliance System to track guarantees, conditions and orders imposed by the authority",
           agency: "SIC",
           software: "Monitoring and data consolidation system (not specified)",
-          ownershipModel:
-            "In collaboration with the Information Technology Office (OTI), the implementation of the Monitoring and Compliance System (SISEC)",
+          ownershipModel: "In collaboration with the Information Technology Office (OTI), the implementation of the Monitoring and Compliance System (SISEC)",
           practiceArea: null,
           challenges: null,
           notes: null,
@@ -1250,19 +1208,16 @@
           details:
             "Retail price monitoring tool scraping supermarket websites and generating structured datasets for competition analysis",
           agency: "SIC",
-          software:
-            "Python 3.11; PostgreSQL; Microsoft Azure; Kubernetes; Power BI (dashboards); microservices architecture",
+          software: "Python 3.11; PostgreSQL; Microsoft Azure; Kubernetes; Power BI (dashboards); microservices architecture",
           ownershipModel: null,
           practiceArea: null,
-          challenges:
-            "No graphical user interface; manual analysis required; accessibility limits for non-technical users.",
-          notes:
-            "Monitors major supermarket chains (Éxito, Carulla, Metro, Olímpica, Jumbo); cloud-based modular architecture.",
+          challenges: "No graphical user interface; manual analysis required; accessibility limits for non-technical users.",
+          notes: "Monitors major supermarket chains (Éxito, Carulla, Metro, Olímpica, Jumbo); cloud-based modular architecture.",
           sourceRow: 75,
         },
         {
           id: "colombia-76",
-          name: "Sabueso",
+          name: "Price monitoring / Data scraping",
           category: "Price monitoring / Data scraping",
           report: "4th. Annual Report",
           year: 2025,
@@ -1272,10 +1227,8 @@
           software: "Python 3.11; PostgreSQL; Azure; Selenium; ChromeDriver",
           ownershipModel: null,
           practiceArea: null,
-          challenges:
-            "CAPTCHA barriers; IP restrictions; currency inconsistencies; limited coverage; manual-intensive analysis.",
-          notes:
-            "Filters non-direct flights; flags outliers; vulnerable to third-party platform changes.",
+          challenges: "CAPTCHA barriers; IP restrictions; currency inconsistencies; limited coverage; manual-intensive analysis.",
+          notes: "Filters non-direct flights; flags outliers; vulnerable to third-party platform changes.",
           sourceRow: 76,
         },
         {
@@ -1287,14 +1240,11 @@
           details:
             "Automated regulatory monitoring tool using NLP and classification models to detect regulatory projects that may impact competition and sending alerts when changes are detected",
           agency: "SIC",
-          software:
-            "Python; PostgreSQL; NLP; ChromeDriver; XPath; Azure; Kubernetes",
+          software: "Python; PostgreSQL; NLP; ChromeDriver; XPath; Azure; Kubernetes",
           ownershipModel: null,
           practiceArea: null,
-          challenges:
-            "High volume of notifications; risk of noise; requires keyword maintenance; coordination challenges across institutions.",
-          notes:
-            "Monitors 69 public entities; sends daily notifications with attachments and deadlines.",
+          challenges: "High volume of notifications; risk of noise; requires keyword maintenance; coordination challenges across institutions.",
+          notes: "Monitors 69 public entities; sends daily notifications with attachments and deadlines.",
           sourceRow: 77,
         },
         {
@@ -1306,14 +1256,11 @@
           details:
             "Public procurement screening tool detecting potential collusion indicators (single bidder, low competition, minimal discounts).",
           agency: "SIC",
-          software:
-            "Python 3.11; PostgreSQL; Azure; Socrata API; Excel reporting",
+          software: "Python 3.11; PostgreSQL; Azure; Socrata API; Excel reporting",
           ownershipModel: null,
           practiceArea: "Bid Rigging",
-          challenges:
-            "Does not detect deserted or non-awarded tenders; cannot identify complex plural structures; occasional false alerts for expired tenders; dependent on dataset updates.",
-          notes:
-            "Generates biweekly alerts; used by Elite Anti-Collusion Work Group.",
+          challenges: "Does not detect deserted or non-awarded tenders; cannot identify complex plural structures; occasional false alerts for expired tenders; dependent on dataset updates.",
+          notes: "Generates biweekly alerts; used by Elite Anti-Collusion Work Group.",
           sourceRow: 78,
         },
       ],
@@ -1349,8 +1296,7 @@
           details:
             "AI-assisted information retrieval and indexing platform to aggregate the information sources used by the authority into a single searchable interface.",
           agency: "Czech Office for the Protection of Competition",
-          software:
-            "AI analytics toolbox (machine learning models, NLP tools, image analysis).",
+          software: "AI analytics toolbox (machine learning models, NLP tools, image analysis).",
           ownershipModel: "In-house",
           practiceArea: null,
           challenges: null,
@@ -1363,11 +1309,9 @@
           category: null,
           report: "1st. Annual Report",
           year: 2022,
-          details:
-            "Structured public procurement database system (stack not specified).",
+          details: null,
           agency: "Czech Office for the Protection of Competition",
-          software:
-            "Structured public procurement database system (stack not specified).",
+          software: "Structured public procurement database system (stack not specified).",
           ownershipModel: "In-house",
           practiceArea: null,
           challenges: null,
@@ -1387,8 +1331,7 @@
           ownershipModel: "In-house",
           practiceArea: null,
           challenges: null,
-          notes:
-            "No significant differences on what was reported on previous entry (1st. annual report)",
+          notes: "No significant differences on what was reported on previous entry (1st. annual report)",
           sourceRow: 82,
         },
         {
@@ -1404,13 +1347,12 @@
           ownershipModel: null,
           practiceArea: null,
           challenges: null,
-          notes:
-            "There might be a mistake here, as the previous report talks about Datacross III",
+          notes: "There might be a mistake here, as the previous report talks about Datacross III",
           sourceRow: 83,
         },
         {
           id: "czechia-84",
-          name: "Probber web-scraping software",
+          name: null,
           category: null,
           report: "2nd. Annual Report",
           year: 2023,
@@ -1418,12 +1360,10 @@
             "Web scraping tool used to collect data from the public procurement bulletin and build an internal database for procurement analysis.",
           agency: "Czech Office for the Protection of Competition",
           software: "Probber web-scraping software",
-          ownershipModel:
-            "In-house (developed by Masaryk University Brno - Czech Republic)",
+          ownershipModel: "In-house (developed by Masaryk University Brno - Czech Republic)",
           practiceArea: null,
           challenges: null,
-          notes:
-            "Reported as Datacross II. Probably it's the same as 'Datacross III' reported on the 1st. annual report.",
+          notes: "Reported as Datacross II. Probably it's the same as 'Datacross III' reported on the 1st. annual report.",
           sourceRow: 84,
         },
         {
@@ -1444,7 +1384,7 @@
         },
         {
           id: "czechia-86",
-          name: "MergerSim",
+          name: null,
           category: null,
           report: "2nd. Annual Report",
           year: 2023,
@@ -1460,11 +1400,11 @@
         },
         {
           id: "czechia-87",
-          name: "3rd. Annual Report entry",
+          name: null,
           category: null,
           report: "3rd. Annual Report",
           year: 2024,
-          details: "",
+          details: null,
           agency: "Czech Office for the Protection of Competition",
           software: null,
           ownershipModel: null,
@@ -1482,8 +1422,7 @@
           details:
             "EU-funded project developing an AI-based investigative toolbox for financial investigations related to organized crime and economic misconduct. The system integrates datasets such as business registers, company ownership records, real estate data, public procurement data, cryptocurrency transactions, and satellite imagery. Analytical functions include machine learning detection models, natural language processing for document analysis, and image analysis tools.",
           agency: "Czech Office for the Protection of Competition",
-          software:
-            "AI analytics toolbox (machine learning models, NLP tools, image analysis).",
+          software: "AI analytics toolbox (machine learning models, NLP tools, image analysis).",
           ownershipModel: "In-house",
           practiceArea: null,
           challenges: null,
@@ -1499,8 +1438,7 @@
           details:
             "Centralized database of public procurement data designed to standardize and aggregate procurement information from multiple providers. Expected to become operational in 2025",
           agency: "Czech Office for the Protection of Competition",
-          software:
-            "Structured public procurement database system (stack not specified).",
+          software: "Structured public procurement database system (stack not specified).",
           ownershipModel: "In-house",
           practiceArea: null,
           challenges: null,
@@ -1592,8 +1530,7 @@
           ownershipModel: null,
           practiceArea: "Cartels",
           challenges: null,
-          notes:
-            "Market intelligence tool for proactive cartel detection in development since 2020 (not yet deployed).",
+          notes: "Market intelligence tool for proactive cartel detection in development since 2020 (not yet deployed).",
           sourceRow: 94,
         },
       ],
@@ -1651,8 +1588,7 @@
           ownershipModel: null,
           practiceArea: "Competitive Neutrality",
           challenges: null,
-          notes:
-            "Plans to extend to Azure Prompt Flow with embeddings and web search.",
+          notes: "Plans to extend to Azure Prompt Flow with embeddings and web search.",
           sourceRow: 97,
         },
         {
@@ -1776,8 +1712,7 @@
           category: "Search engine",
           report: "3rd. Annual Report",
           year: 2024,
-          details:
-            "Citation network graph tool expanded to the Autorité's merger decisions. Replicated for 3,275 published merger decisions up to 1 January 2024, with code released on GitHub.",
+          details: null,
           agency: "FCA",
           software: null,
           ownershipModel: null,
@@ -2016,8 +1951,7 @@
           software: "Python; PostgreSQL",
           ownershipModel: null,
           practiceArea: "Cartels",
-          challenges:
-            "Rule-based, deterministic. Pilot phase on two real cases. Entity resolution for generic email domains (e.g., gmail.com). No semantic analysis yet; relies on keyword filtering and structural patterns. Scalability under evaluation.",
+          challenges: "Rule-based, deterministic. Pilot phase on two real cases. Entity resolution for generic email domains (e.g., gmail.com). No semantic analysis yet; relies on keyword filtering and structural patterns. Scalability under evaluation.",
           notes: "Planned: semantic search for coded/subtle cartel language.",
           sourceRow: 119,
         },
@@ -2038,8 +1972,7 @@
           ownershipModel: null,
           practiceArea: "All-purpose",
           challenges: null,
-          notes:
-            "Investigating AI tools for pattern identification in procurement documents and for supporting dawn raid data review.",
+          notes: "Investigating AI tools for pattern identification in procurement documents and for supporting dawn raid data review.",
           sourceRow: 120,
         },
         {
@@ -2055,8 +1988,7 @@
           ownershipModel: null,
           practiceArea: "All-purpose",
           challenges: null,
-          notes:
-            "Joint TSI project 'Supporting Digital Transformation in Competition Law Enforcement' approved March 2025 (not yet deployed).",
+          notes: "Joint TSI project 'Supporting Digital Transformation in Competition Law Enforcement' approved March 2025 (not yet deployed).",
           sourceRow: 121,
         },
       ],
@@ -2226,8 +2158,7 @@
           ownershipModel: null,
           practiceArea: "Bid Rigging",
           challenges: null,
-          notes:
-            "Early stage. Evaluating effectiveness of methods for Japanese procurement rules and practices.",
+          notes: "Early stage. Evaluating effectiveness of methods for Japanese procurement rules and practices.",
           sourceRow: 130,
         },
       ],
@@ -2263,8 +2194,7 @@
           ownershipModel: null,
           practiceArea: "Cartels",
           challenges: null,
-          notes:
-            "Building in-house forensics lab. Bid-rigging detection toolkit in development with PPRA using algorithms on tender documentation (not yet deployed).",
+          notes: "Building in-house forensics lab. Bid-rigging detection toolkit in development with PPRA using algorithms on tender documentation (not yet deployed).",
           sourceRow: 132,
         },
         {
@@ -2273,8 +2203,7 @@
           category: "Econometric Analysis",
           report: "2nd. Annual Report",
           year: 2023,
-          details:
-            "R Analytics used for data analysis in Digital Credit Market Inquiry.",
+          details: "R Analytics used for data analysis in Digital Credit Market Inquiry.",
           agency: "CAK",
           software: "R",
           ownershipModel: null,
@@ -2347,8 +2276,7 @@
           software: null,
           ownershipModel: null,
           practiceArea: "Cartels",
-          challenges:
-            "Mixed results: strong in complex/fragmented evidence cases, weaker without context-specific training examples.",
+          challenges: "Mixed results: strong in complex/fragmented evidence cases, weaker without context-specific training examples.",
           notes: null,
           sourceRow: 137,
         },
@@ -2364,8 +2292,7 @@
           software: null,
           ownershipModel: null,
           practiceArea: "Bid Rigging",
-          challenges:
-            "Temporarily paused due to declining quality and granularity of publicly available procurement data.",
+          challenges: "Temporarily paused due to declining quality and granularity of publicly available procurement data.",
           notes: null,
           sourceRow: 138,
         },
@@ -2386,8 +2313,7 @@
           ownershipModel: null,
           practiceArea: "All-purpose",
           challenges: null,
-          notes:
-            "All planned computational tools (eDiscovery, T&C monitoring, market monitoring) not yet implemented due to resource constraints.",
+          notes: "All planned computational tools (eDiscovery, T&C monitoring, market monitoring) not yet implemented due to resource constraints.",
           sourceRow: 139,
         },
         {
@@ -2471,8 +2397,7 @@
           ownershipModel: null,
           practiceArea: "All-purpose",
           challenges: null,
-          notes:
-            "No advanced analytics or AI yet. Structured data environment intended as foundation for future computational tools.",
+          notes: "No advanced analytics or AI yet. Structured data environment intended as foundation for future computational tools.",
           sourceRow: 144,
         },
       ],
@@ -2624,8 +2549,7 @@
           ownershipModel: "Proprietary",
           practiceArea: "All-purpose",
           challenges: null,
-          notes:
-            "Exploring GPT-4 and generative AI for internal processes and for analysis of digital evidence from dawn raids, with early promising results.",
+          notes: "Exploring GPT-4 and generative AI for internal processes and for analysis of digital evidence from dawn raids, with early promising results.",
           sourceRow: 153,
         },
         {
@@ -2671,8 +2595,8 @@
           report: "3rd. Annual Report",
           year: 2024,
           details:
-            "Data Unit Taskforce Data and Algorithms, internal unit developing analytical tools and supporting competition investigations.",
-          agency: "COFECE",
+            "Data Unit	Taskforce Data and Algorithms, internal unit developing analytical tools and supporting competition investigations.",
+          agency: "ACM",
           software: null,
           ownershipModel: null,
           practiceArea: "All Purpose",
@@ -2688,7 +2612,7 @@
           year: 2024,
           details:
             "Cartel Detection Tender Tool, package used to identify aberrant bidding behavior in procurement data. Developed and maintained by TDA, and shared within the ECN.",
-          agency: "COFECE",
+          agency: "ACM",
           software: null,
           ownershipModel: null,
           practiceArea: "Bid Rigging",
@@ -2704,13 +2628,12 @@
           year: 2024,
           details:
             "Signalling Monitor, a tool aimed at detecting signals of price changes in news articles using a BERT language model.",
-          agency: "COFECE",
+          agency: "ACM",
           software: null,
           ownershipModel: null,
           practiceArea: "Cartels",
           challenges: null,
-          notes:
-            "The Tender Tool is shared within the ECN and from there can be used by other European Competition Authorities.",
+          notes: "The Tender Tool is shared within the ECN and from there can be used by other European Competition Authorities.",
           sourceRow: 158,
         },
       ],
@@ -2806,8 +2729,7 @@
           ownershipModel: null,
           practiceArea: "Consumer Protection",
           challenges: null,
-          notes:
-            "OFT piloting computational tools for analyzing advertisements and complaints across digital platforms.",
+          notes: "OFT piloting computational tools for analyzing advertisements and complaints across digital platforms.",
           sourceRow: 163,
         },
       ],
@@ -2827,8 +2749,7 @@
           ownershipModel: null,
           practiceArea: "Bid Rigging",
           challenges: null,
-          notes:
-            "In development. One professional exclusively dedicated; rest of team has partial dedication.",
+          notes: "In development. One professional exclusively dedicated; rest of team has partial dedication.",
           sourceRow: 164,
         },
         {
@@ -2864,8 +2785,7 @@
           ownershipModel: "Proprietary",
           practiceArea: "Bid Rigging",
           challenges: null,
-          notes:
-            "Prototype tool for preliminary risk assessment of tender collusion exists but constrained by data quality. Cooperating with Public Procurement Office on eProcurement (eZamówienia) data.",
+          notes: "Prototype tool for preliminary risk assessment of tender collusion exists but constrained by data quality. Cooperating with Public Procurement Office on eProcurement (eZamówienia) data.",
           sourceRow: 166,
         },
         {
@@ -2897,8 +2817,7 @@
           ownershipModel: "Proprietary",
           practiceArea: "Consumer Protection",
           challenges: null,
-          notes:
-            "Project in early stage. Open idea competition planned for contractor selection.",
+          notes: "Project in early stage. Open idea competition planned for contractor selection.",
           sourceRow: 168,
         },
         {
@@ -2914,8 +2833,7 @@
           ownershipModel: "Proprietary",
           practiceArea: "Consumer Protection",
           challenges: null,
-          notes:
-            "White Paper on AI for consumer protection published 2024, discussing organizational, legal, and ethical aspects of AI in public agencies.",
+          notes: "White Paper on AI for consumer protection published 2024, discussing organizational, legal, and ethical aspects of AI in public agencies.",
           sourceRow: 169,
         },
         {
@@ -2963,8 +2881,7 @@
           ownershipModel: "No",
           practiceArea: "Consumer Protection",
           challenges: null,
-          notes:
-            "PoC to be presented February 2026. Deployment via custom-built API. Full methodology for regulatory proceedings on dark patterns to be delivered.",
+          notes: "PoC to be presented February 2026. Deployment via custom-built API. Full methodology for regulatory proceedings on dark patterns to be delivered.",
           sourceRow: 172,
         },
       ],
@@ -2989,8 +2906,7 @@
           software: null,
           ownershipModel: "Proprietary",
           practiceArea: "All-purpose",
-          challenges:
-            "Data quality issues from fragmented public administration IT systems with low interoperability. No unique identifier for natural persons due to GDPR restrictions. Company name matching resolved via deterministic matching on unique numerical IDs, but person matching remains manual.",
+          challenges: "Data quality issues from fragmented public administration IT systems with low interoperability. No unique identifier for natural persons due to GDPR restrictions. Company name matching resolved via deterministic matching on unique numerical IDs, but person matching remains manual.",
           notes: null,
           sourceRow: 173,
         },
@@ -3023,8 +2939,7 @@
           ownershipModel: "Proprietary",
           practiceArea: "All-purpose",
           challenges: null,
-          notes:
-            "Text analytics on case documents described as a future avenue, not deployed.",
+          notes: "Text analytics on case documents described as a future avenue, not deployed.",
           sourceRow: 175,
         },
       ],
@@ -3043,8 +2958,7 @@
           software: null,
           ownershipModel: null,
           practiceArea: "All-purpose",
-          challenges:
-            "Data inconsistencies and varying formats across sources. Data-sharing agreements with private providers require privacy/security consideration.",
+          challenges: "Data inconsistencies and varying formats across sources. Data-sharing agreements with private providers require privacy/security consideration.",
           notes: null,
           sourceRow: 176,
         },
@@ -3061,8 +2975,7 @@
           ownershipModel: null,
           practiceArea: "Bid Rigging",
           challenges: null,
-          notes:
-            "Planned: network analysis using AI to map relationships between market participants across tenders. Product-level supplier concentration classification under development.",
+          notes: "Planned: network analysis using AI to map relationships between market participants across tenders. Product-level supplier concentration classification under development.",
           sourceRow: 177,
         },
         {
@@ -3116,10 +3029,23 @@
       ],
     },
     Serbia: {
-      projects: [],
-      emptyStateTitle: "No computational tools reported",
-      emptyStateMessage:
-        "No computational tools, data systems, or reusable analytical methods reported. The chapter focuses on MSME policy, outreach, and regulatory design.",
+      projects: [
+        {
+          id: "serbia-181",
+          name: null,
+          category: null,
+          report: "4th. Annual Report",
+          year: 2025,
+          details: "*See Notes",
+          agency: "GAC",
+          software: null,
+          ownershipModel: null,
+          practiceArea: null,
+          challenges: null,
+          notes: "No computational tools, data systems, or reusable analytical methods reported. The chapter focuses on MSME policy, outreach, and regulatory design.",
+          sourceRow: 181,
+        },
+      ],
     },
     Singapore: {
       projects: [
@@ -3312,8 +3238,7 @@
           ownershipModel: null,
           practiceArea: "Consumer Protection",
           challenges: null,
-          notes:
-            "Research collaboration with Civil Service College on dark patterns planned.",
+          notes: "Research collaboration with Civil Service College on dark patterns planned.",
           sourceRow: 193,
         },
       ],
@@ -3332,8 +3257,7 @@
           software: null,
           ownershipModel: "Proprietary",
           practiceArea: "All-purpose",
-          challenges:
-            "Cost prohibitive for smaller authorities. Slovak language specificity added complexity. Concluded that manual extraction was more efficient given the small dataset.",
+          challenges: "Cost prohibitive for smaller authorities. Slovak language specificity added complexity. Concluded that manual extraction was more efficient given the small dataset.",
           notes: null,
           sourceRow: 194,
         },
@@ -3350,8 +3274,7 @@
           ownershipModel: null,
           practiceArea: "All-purpose",
           challenges: null,
-          notes:
-            "Plans to publish regular economic briefs on competition in various sectors.",
+          notes: "Plans to publish regular economic briefs on competition in various sectors.",
           sourceRow: 195,
         },
         {
@@ -3367,8 +3290,7 @@
           ownershipModel: null,
           practiceArea: "Cartels",
           challenges: null,
-          notes:
-            "Planning to supplement with NUIX for more robust multi-format data processing, also used by other European competition authorities.",
+          notes: "Planning to supplement with NUIX for more robust multi-format data processing, also used by other European competition authorities.",
           sourceRow: 196,
         },
         {
@@ -3399,8 +3321,7 @@
           software: "Transparex",
           ownershipModel: "No",
           practiceArea: "Bid Rigging",
-          challenges:
-            "Budget constraints prevented purchase despite recognized value.",
+          challenges: "Budget constraints prevented purchase despite recognized value.",
           notes: null,
           sourceRow: 198,
         },
@@ -3421,8 +3342,7 @@
           ownershipModel: "No",
           practiceArea: "All-purpose",
           challenges: null,
-          notes:
-            "No dedicated IT unit. Tools operated by volunteer case handlers in their spare time.",
+          notes: "No dedicated IT unit. Tools operated by volunteer case handlers in their spare time.",
           sourceRow: 199,
         },
         {
@@ -3437,8 +3357,7 @@
           software: "X-Ways",
           ownershipModel: null,
           practiceArea: "Cartels",
-          challenges:
-            "No dedicated IT personnel. Budgetary constraints. Agency operates tools on voluntary basis among regular case handlers.",
+          challenges: "No dedicated IT personnel. Budgetary constraints. Agency operates tools on voluntary basis among regular case handlers.",
           notes: null,
           sourceRow: 200,
         },
@@ -3455,8 +3374,7 @@
           ownershipModel: "No",
           practiceArea: "Mergers",
           challenges: null,
-          notes:
-            "Agency successfully applied for EU Technical Support Instrument to support digital transformation in competition enforcement. Plans to set up automated public procurement analysis system for bid-rigging detection, but currently lacks expertise, hardware, software, and human resources.",
+          notes: "Agency successfully applied for EU Technical Support Instrument to support digital transformation in competition enforcement. Plans to set up automated public procurement analysis system for bid-rigging detection, but currently lacks expertise, hardware, software, and human resources.",
           sourceRow: 201,
         },
       ],
@@ -3488,8 +3406,7 @@
           ownershipModel: "Proprietary",
           practiceArea: "Bid Rigging",
           challenges: null,
-          notes:
-            "ML-based tool for bid-rigging detection (supervised and semi-supervised) and graph databases for network analysis of companies and individuals were under intensive development, not yet fully operational.",
+          notes: "ML-based tool for bid-rigging detection (supervised and semi-supervised) and graph databases for network analysis of companies and individuals were under intensive development, not yet fully operational.",
           sourceRow: 202,
         },
         {
@@ -3601,8 +3518,7 @@
           ownershipModel: "Proprietary",
           practiceArea: "Bid Rigging",
           challenges: null,
-          notes:
-            "Modular multi-agent architecture with GNN, CNN, zero-shot learning, and association rule mining described as research/pilot stage. Generative AI being expanded for natural language explanations.",
+          notes: "Modular multi-agent architecture with GNN, CNN, zero-shot learning, and association rule mining described as research/pilot stage. Generative AI being expanded for natural language explanations.",
           sourceRow: 209,
         },
         {
@@ -3856,8 +3772,7 @@
           ownershipModel: null,
           practiceArea: "Bid Rigging",
           challenges: null,
-          notes:
-            "R&D ongoing for web scraping from social media, e-marketplaces, and other web pages for detecting possible competition infringements.",
+          notes: "R&D ongoing for web scraping from social media, e-marketplaces, and other web pages for detecting possible competition infringements.",
           sourceRow: 224,
         },
       ],
@@ -4015,7 +3930,7 @@
           report: "2nd. Annual Report",
           year: 2023,
           details:
-            '"Selene": open-sourced Python web-scraping package standardizing internal scraping code. Object-oriented framework built on open-source packages, covering standard tasks from scrolling to screenshots.',
+            "\"Selene\": open-sourced Python web-scraping package standardizing internal scraping code. Object-oriented framework built on open-source packages, covering standard tasks from scrolling to screenshots.",
           agency: "CMA",
           software: "Python",
           ownershipModel: null,
