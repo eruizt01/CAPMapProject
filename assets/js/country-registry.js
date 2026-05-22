@@ -96,11 +96,10 @@
       canonicalName: "Catalonia",
       isoCode: "UN",
       pagePath: "Countries/Catalonia.html",
-      pageAvailable: true,
-      supported: true,
+      pageAvailable: false,
+      supported: false,
       aliases: [],
       mapCountries: ["Spain"],
-      yearDownloads: { 2023: "Reports/Catalonia 2nd Report.pdf", 2024: "Reports/Catalonia 3rd Report.pdf", 2025: "Reports/Catalonia 4th Report.pdf" },
     },
     Chile: {
       canonicalName: "Chile",

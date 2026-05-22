@@ -105,7 +105,7 @@
       this.containerId = (config && config.containerId) || "app";
       this.viewMode = "cards";
       this.sortConfig = { key: null, direction: "asc" };
-      this.currentFilters = { year: null, category: "all", search: "" };
+      this.currentFilters = { year: null, category: "all", agency: "all", search: "" };
       this.categoryChart = null;
       this.expandedDescriptions = new Set();
       this.expandedAdditionalDetails = new Set();
@@ -191,6 +191,7 @@
         flagUrl,
         projects,
         yearDownloads: safeConfig.yearDownloads || registryDownloads || {},
+        agencyYearDownloads: safeConfig.agencyYearDownloads || {},
         backLinkHref: safeConfig.backLinkHref || "../CAPMap.html",
         backLinkLabel: safeConfig.backLinkLabel || "← Back to map",
         breadcrumbHomeHref: safeConfig.breadcrumbHomeHref || "../CAPMap.html",
@@ -263,6 +264,14 @@
         });
       }
 
+      const agencyFilter = root.querySelector("#agency-filter");
+      if (agencyFilter) {
+        agencyFilter.addEventListener("change", (event) => {
+          this.currentFilters.agency = event.target.value;
+          this.applyFilters();
+        });
+      }
+
       const searchFilter = root.querySelector("#search-filter");
       if (searchFilter) {
         searchFilter.addEventListener("input", (event) => {
@@ -302,7 +311,7 @@
     }
 
     resetFilters() {
-      this.currentFilters = { year: null, category: "all", search: "" };
+      this.currentFilters = { year: null, category: "all", agency: "all", search: "" };
 
       const root = this.getContainer();
       root
@@ -312,6 +321,11 @@
       const categoryFilter = root.querySelector("#category-filter");
       if (categoryFilter) {
         categoryFilter.value = "all";
+      }
+
+      const agencyFilter = root.querySelector("#agency-filter");
+      if (agencyFilter) {
+        agencyFilter.value = "all";
       }
 
       const searchFilter = root.querySelector("#search-filter");
@@ -332,6 +346,13 @@
         if (
           this.currentFilters.category !== "all" &&
           project.category !== this.currentFilters.category
+        ) {
+          return false;
+        }
+
+        if (
+          this.currentFilters.agency !== "all" &&
+          project.agency !== this.currentFilters.agency
         ) {
           return false;
         }
@@ -374,7 +395,13 @@
 
       const downloadLink = root.querySelector("#year-download-link");
       if (downloadLink) {
-        const downloads = this.data.yearDownloads || {};
+        const agencyDownloads =
+          this.currentFilters.agency !== "all" &&
+          this.data.agencyYearDownloads &&
+          this.data.agencyYearDownloads[this.currentFilters.agency]
+            ? this.data.agencyYearDownloads[this.currentFilters.agency]
+            : null;
+        const downloads = agencyDownloads || this.data.yearDownloads || {};
         const selectedYear = this.currentFilters.year;
         if (selectedYear && downloads[selectedYear]) {
           downloadLink.href = encodeURI(downloads[selectedYear]);
@@ -415,6 +442,10 @@
 
       if (this.currentFilters.category !== "all") {
         filters.push(`in ${this.currentFilters.category}`);
+      }
+
+      if (this.currentFilters.agency !== "all") {
+        filters.push(`by ${this.currentFilters.agency}`);
       }
 
       if (this.currentFilters.search) {
@@ -472,6 +503,9 @@
       ].sort();
       const categories = [
         ...new Set(this.data.projects.map((p) => p.category)),
+      ];
+      const agencies = [
+        ...new Set(this.data.projects.map((p) => p.agency).filter(Boolean)),
       ];
       const chartMarkup = this.chartAvailable
         ? '<canvas id="categoryChart"></canvas>'
@@ -535,6 +569,16 @@
                                 ${categories.map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`).join("")}
                             </select>
                         </div>
+
+                        ${agencies.length > 1 ? `
+                        <div class="filter-group">
+                            <label for="agency-filter">Agency</label>
+                            <select id="agency-filter" class="filter-select">
+                                <option value="all">All Agencies</option>
+                                ${agencies.map((a) => `<option value="${escapeHtml(a)}">${escapeHtml(a)}</option>`).join("")}
+                            </select>
+                        </div>
+                        ` : ""}
 
                         <div class="filter-group">
                             <label for="search-filter">Search</label>
