@@ -33,7 +33,12 @@
     const countryPageMap = countryRegistry.getCountryPageMap();
 
     function isClickableCountry(countryName) {
-      return !!countryName && clickableCountries.includes(countryName);
+      if (!countryName || !clickableCountries.includes(countryName)) {
+        return false;
+      }
+
+      const countryData = getCountryData() || {};
+      return countryData[countryName] && countryData[countryName].hasProjects;
     }
 
     function getCountryCode(countryName) {
@@ -43,21 +48,16 @@
     function renderCountryTags() {
       const countryData = getCountryData() || {};
       return clickableCountries
+        .filter(
+          (country) => countryData[country] && countryData[country].hasProjects,
+        )
         .map((country) => {
           const details = countryData[country] || {};
           const visited = details.visited;
-          const hasProjects = details.hasProjects !== false;
-          const classes = [
-            "country-tag",
-            visited ? "visited" : "",
-            hasProjects ? "" : "no-project-data",
-          ]
+          const classes = ["country-tag", visited ? "visited" : ""]
             .filter(Boolean)
             .join(" ");
-          const note = hasProjects
-            ? ""
-            : '<span class="country-tag-note">No recorded data yet</span>';
-          return `<span class="${classes}" data-country="${country}">${country}${note}</span>`;
+          return `<span class="${classes}" data-country="${country}">${country}</span>`;
         })
         .join("");
     }

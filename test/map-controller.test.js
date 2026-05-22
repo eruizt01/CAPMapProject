@@ -49,16 +49,19 @@ test("map controller exposes country code lookup through the registry", () => {
   assert.equal(controller.getCountryCode("South-Korea"), "KR");
 });
 
-test("map controller renders country tags from canonical supported countries", () => {
+test("map controller renders country tags only for countries with project data", () => {
   const controller = createController({
-    USA: { hasProjects: false, visited: true },
+    Argentina: { hasProjects: true, visited: true },
+    USA: { hasProjects: false },
+    "South Korea": { hasProjects: false },
   });
 
   const markup = controller.renderCountryTags();
 
-  assert.match(markup, /data-country="USA"/);
-  assert.match(markup, /data-country="South Korea"/);
+  assert.match(markup, /data-country="Argentina"/);
   assert.match(markup, /country-tag visited/);
-  assert.match(markup, /no-project-data/);
-  assert.match(markup, /No recorded data yet/);
+  assert.doesNotMatch(markup, /data-country="USA"/);
+  assert.doesNotMatch(markup, /data-country="South Korea"/);
+  assert.doesNotMatch(markup, /no-project-data/);
+  assert.doesNotMatch(markup, /No recorded data yet/);
 });

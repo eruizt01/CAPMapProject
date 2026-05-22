@@ -8,10 +8,8 @@ test("CAPMap loads and a supported country opens a usable dashboard", async ({
   await expect(page.locator('[data-testid="map-root"]')).toBeVisible();
   await expect(page.locator("#world-map")).toBeVisible();
   await expect(
-    page.getByText(
-      "Includes recorded initiatives for 40 jurisdictions, with additional jurisdiction pages prepared for future data.",
-    ),
-  ).toBeVisible();
+    page.getByText("Includes recorded initiatives", { exact: false }),
+  ).toHaveCount(0);
 
   await page.locator('.country-tag[data-country="Argentina"]').click();
 
@@ -34,6 +32,7 @@ test("CAPMap renders when persisted country data is corrupted", async ({
   await expect(
     page.locator('.country-tag[data-country="Argentina"]'),
   ).toBeVisible();
+  await expect(page.locator('.country-tag[data-country="USA"]')).toHaveCount(0);
 });
 
 test("CAPMap renders one SVG path source for supported countries", async ({
@@ -46,13 +45,15 @@ test("CAPMap renders one SVG path source for supported countries", async ({
   ).toHaveCount(2);
 });
 
-test("CAPMap distinguishes prepared pages without project data", async ({
+test("CAPMap hides prepared pages without project data from the initial map controls", async ({
   page,
 }) => {
   await page.goto("/CAPMap.html");
 
   const usaTag = page.locator('.country-tag[data-country="USA"]');
+  const usaPath = page.locator('#world-map path[data-country="USA"]');
 
-  await expect(usaTag).toHaveClass(/no-project-data/);
-  await expect(usaTag).toContainText("No recorded data yet");
+  await expect(usaTag).toHaveCount(0);
+  await expect(page.getByText("No recorded data yet")).toHaveCount(0);
+  await expect(usaPath.first()).not.toHaveClass(/clickable/);
 });

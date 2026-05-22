@@ -82,10 +82,6 @@
             fill: #9b59b6;
         }
 
-        #world-map path.clickable.no-project-data {
-            fill: #95a5a6;
-        }
-
         .tooltip {
             position: absolute;
             background: #2c3e50;
@@ -153,22 +149,6 @@
 
         .country-tag.visited:hover {
             background: #8e44ad;
-        }
-
-        .country-tag.no-project-data {
-            background: #7f8c8d;
-        }
-
-        .country-tag.no-project-data:hover {
-            background: #6c7a7d;
-        }
-
-        .country-tag-note {
-            display: block;
-            font-size: 11px;
-            font-weight: 400;
-            line-height: 1.3;
-            margin-top: 2px;
         }
 
         /* Country Dashboard Styles */
@@ -1764,7 +1744,6 @@
                            </svg>
                        </div>
                        <div class="info-panel">
-                           <p>Includes recorded initiatives for 40 jurisdictions, with additional jurisdiction pages prepared for future data.</p>
                            ${this.mapStatusMessage ? `<div class="no-data" style="margin-top: 16px; padding: 20px;"><p>${this.mapStatusMessage}</p></div>` : ''}
                            <div class="country-list">
                                ${this.mapController.renderCountryTags()}
