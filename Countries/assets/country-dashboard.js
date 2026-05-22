@@ -103,7 +103,7 @@
   class CountryDashboard {
     constructor(config) {
       this.containerId = (config && config.containerId) || "app";
-      this.viewMode = "table";
+      this.viewMode = "cards";
       this.sortConfig = { key: null, direction: "asc" };
       this.currentFilters = { year: null, category: "all", search: "" };
       this.categoryChart = null;
@@ -247,11 +247,10 @@
         });
       });
 
-      root.querySelectorAll(".year-pill").forEach((pill) => {
-        pill.addEventListener("click", () => {
-          const year = pill.getAttribute("data-year");
-          this.currentFilters.year =
-            this.currentFilters.year === year ? null : year;
+      root.querySelectorAll(".year-pill").forEach((button) => {
+        button.addEventListener("click", () => {
+          const year = button.getAttribute("data-year") || null;
+          this.currentFilters.year = year;
           this.applyFilters();
         });
       });
@@ -367,7 +366,10 @@
 
       root.querySelectorAll(".year-pill").forEach((pill) => {
         const year = pill.getAttribute("data-year");
-        pill.classList.toggle("active", this.currentFilters.year === year);
+        pill.classList.toggle(
+          "active",
+          (this.currentFilters.year || "") === year,
+        );
       });
 
       const downloadLink = root.querySelector("#year-download-link");
@@ -387,6 +389,18 @@
       const visibleSummary = root.querySelector("#visible-projects-summary");
       if (visibleSummary) {
         visibleSummary.textContent = this.getVisibleProjectsSummary();
+      }
+
+      const projectsHeadingSummary = root.querySelector(
+        "#projects-heading-summary",
+      );
+      if (projectsHeadingSummary) {
+        projectsHeadingSummary.textContent = this.getVisibleProjectsSummary();
+      }
+
+      const countrySubtitle = root.querySelector(".country-subtitle");
+      if (countrySubtitle) {
+        countrySubtitle.textContent = this.getVisibleProjectsSummary();
       }
     }
 
@@ -467,24 +481,33 @@
                 <div class="dashboard-container" data-testid="dashboard-root">
                     ${this.renderWarnings()}
 
-                    <div class="breadcrumb">
-                        <a href="${escapeHtml(this.data.breadcrumbHomeHref)}" class="back-link" data-dashboard-back="true">${escapeHtml(this.data.breadcrumbHomeLabel)}</a>
-                        <span>→</span>
-                        <span>Computational Antitrust</span>
-                        <span>→</span>
-                        <span>${escapeHtml(this.data.country)}</span>
-                    </div>
+                    <div class="country-hero">
+                        <div class="breadcrumb">
+                            <a href="${escapeHtml(this.data.breadcrumbHomeHref)}" class="back-link" data-dashboard-back="true">${escapeHtml(this.data.breadcrumbHomeLabel)}</a>
+                            <span>→</span>
+                            <span>Computational Antitrust</span>
+                            <span>→</span>
+                            <span>${escapeHtml(this.data.country)}</span>
+                        </div>
 
-                    <div class="country-header">
-                        ${this.data.flagUrl ? `<img src="${escapeHtml(this.data.flagUrl)}" alt="${escapeHtml(this.data.country)} flag" class="country-flag">` : ""}
-                        <h1 class="country-name">${escapeHtml(this.data.country)}</h1>
+                        <div class="country-header">
+                            <div class="country-title-row">
+                                ${this.data.flagUrl ? `<img src="${escapeHtml(this.data.flagUrl)}" alt="${escapeHtml(this.data.country)} flag" class="country-flag">` : ""}
+                                <div>
+                                    <h1 class="country-name">${escapeHtml(this.data.country)}</h1>
+                                    <p class="country-subtitle">${escapeHtml(this.getVisibleProjectsSummary())}</p>
+                                </div>
+                            </div>
+                            <a href="${escapeHtml(this.data.backLinkHref)}" class="back-link country-hero-back" data-dashboard-back="true">${escapeHtml(this.data.backLinkLabel)}</a>
+                        </div>
                     </div>
 
                     <div class="at-a-glance">
                         <div class="stat-card">
                             <h3>Years of Contribution</h3>
                             <div class="year-pills">
-                                ${years.map((year) => `<span class="year-pill" data-year="${escapeHtml(year)}">${escapeHtml(year)}</span>`).join("")}
+                                <button type="button" class="year-pill" data-year="">All years</button>
+                                ${years.map((year) => `<button type="button" class="year-pill" data-year="${escapeHtml(year)}">${escapeHtml(year)}</button>`).join("")}
                             </div>
                             <a id="year-download-link" class="year-download-link hidden" href="#" target="_blank" rel="noopener">Download this year's contribution (PDF)</a>
                         </div>
@@ -521,9 +544,15 @@
                         <button class="reset-filters">Reset Filters</button>
                     </div>
 
-                    <div class="view-toggle">
-                        <button class="view-btn ${this.viewMode === "table" ? "active" : ""}" data-view="table">Table View</button>
-                        <button class="view-btn ${this.viewMode === "cards" ? "active" : ""}" data-view="cards">Card View</button>
+                    <div class="projects-header">
+                        <div>
+                            <h2>Projects</h2>
+                            <p id="projects-heading-summary">${escapeHtml(this.getVisibleProjectsSummary())}</p>
+                        </div>
+                        <div class="view-toggle" aria-label="Project display mode">
+                            <button class="view-btn ${this.viewMode === "cards" ? "active" : ""}" data-view="cards">Cards</button>
+                            <button class="view-btn ${this.viewMode === "table" ? "active" : ""}" data-view="table">Compact table</button>
+                        </div>
                     </div>
 
                     <div id="project-list" data-testid="project-list">
@@ -644,15 +673,15 @@
       }
 
       return `
-                <div class="project-table">
+                <div class="project-table" aria-label="Compact project comparison table">
                     <table>
                         <thead>
                             <tr>
-                                <th class="sortable ${this.sortConfig.key === "name" ? `sort-${this.sortConfig.direction}` : ""}" data-sort="name">Name</th>
-                                <th class="sortable ${this.sortConfig.key === "category" ? `sort-${this.sortConfig.direction}` : ""}" data-sort="category">Category</th>
-                                <th class="sortable ${this.sortConfig.key === "report" ? `sort-${this.sortConfig.direction}` : ""}" data-sort="report">Report</th>
+                                <th class="sortable project-table-project-col ${this.sortConfig.key === "name" ? `sort-${this.sortConfig.direction}` : ""}" data-sort="name">Project</th>
+                                <th class="sortable ${this.sortConfig.key === "category" ? `sort-${this.sortConfig.direction}` : ""}" data-sort="category">Focus</th>
+                                <th class="sortable ${this.sortConfig.key === "report" ? `sort-${this.sortConfig.direction}` : ""}" data-sort="report">Source</th>
                                 <th class="sortable ${this.sortConfig.key === "year" ? `sort-${this.sortConfig.direction}` : ""}" data-sort="year">Year</th>
-                                <th>Actions</th>
+                                <th class="project-table-action-col">Details</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -660,12 +689,27 @@
                               .map(
                                 (project, index) => `
                                 <tr>
-                                    <td><strong>${escapeHtml(project.name)}</strong></td>
-                                    <td>${escapeHtml(project.category)}</td>
-                                    <td>${escapeHtml(project.report)}</td>
-                                    <td>${escapeHtml(project.year)}</td>
-                                    <td>
-                                        <a href="#" class="details-link" data-project="${index}">Details →</a>
+                                    <td data-label="Project">
+                                        <div class="project-table-primary">
+                                            <strong>${escapeHtml(this.getProjectTitle(project))}</strong>
+                                            ${project.agency ? `<span>${escapeHtml(project.agency)}</span>` : ""}
+                                            ${project.details ? `<p>${escapeHtml(this.getProjectPreview(project.details))}</p>` : ""}
+                                        </div>
+                                    </td>
+                                    <td data-label="Focus">
+                                        <div class="project-table-tags">
+                                            ${this.renderMetadataChip("Category", project.category, "primary")}
+                                            ${this.renderMetadataChip("Area", project.practiceArea, "neutral")}
+                                        </div>
+                                    </td>
+                                    <td data-label="Source">
+                                        <span class="project-table-source">${escapeHtml(project.report)}</span>
+                                    </td>
+                                    <td data-label="Year">
+                                        <span class="project-year-badge">${escapeHtml(project.year)}</span>
+                                    </td>
+                                    <td class="project-table-actions-cell" data-label="Details">
+                                        <a href="#" class="details-link" data-project="${index}">Open</a>
                                     </td>
                                 </tr>
                             `,
@@ -703,7 +747,7 @@
                         (project, index) => `
                         ${this.renderProjectCard(project, {
                           projectIndex: index,
-                          showAction: true,
+                          showAction: false,
                           context: "list",
                         })}
                     `,
@@ -725,6 +769,18 @@
         .slice(0, 10);
 
       return words.length ? `${words.join(" ")}…` : "Untitled project";
+    }
+
+    getProjectPreview(value) {
+      const text = String(value || "")
+        .replace(/\s+/g, " ")
+        .trim();
+
+      if (text.length <= 150) {
+        return text;
+      }
+
+      return `${text.slice(0, 147).trim()}...`;
     }
 
     getAdditionalDetailItems(project) {
@@ -760,7 +816,7 @@
       const metadataRow = [
         this.renderMetadataChip("Category", project.category, "primary"),
         this.renderMetadataChip(
-          "Area of Practice",
+          "Area of practice",
           project.practiceArea,
           "neutral",
         ),
@@ -768,14 +824,20 @@
       ]
         .filter(Boolean)
         .join("");
+      const hasLongDescription = String(project.details || "").length > 180;
 
       const descriptionMarkup = project.details
         ? `
                         <div class="project-card-description">
-                            <p class="project-description-copy ${descriptionExpanded ? "expanded" : "clamped"}">${escapeHtml(project.details)}</p>
-                            <button type="button" class="project-card-toggle" data-description-toggle="${escapeHtml(projectId)}">
-                                ${descriptionExpanded ? "Show less" : "Show more"}
-                            </button>
+                            <span class="project-card-section-label">Summary</span>
+                            <p class="project-description-copy ${hasLongDescription && !descriptionExpanded ? "clamped" : "expanded"}">${escapeHtml(project.details)}</p>
+                            ${
+                              hasLongDescription
+                                ? `<button type="button" class="project-card-toggle" data-description-toggle="${escapeHtml(projectId)}">
+                                    ${descriptionExpanded ? "Show less" : "Show more"}
+                                </button>`
+                                : ""
+                            }
                         </div>
                     `
         : "";
@@ -784,7 +846,7 @@
         ? `
                         <div class="project-card-additional">
                             <button type="button" class="project-card-additional-toggle" data-additional-toggle="${escapeHtml(projectId)}">
-                                Additional details
+                                ${additionalExpanded ? "Hide details" : "View details"}
                                 <span>${additionalExpanded ? "−" : "+"}</span>
                             </button>
                             ${
@@ -968,7 +1030,9 @@
           maintainAspectRatio: false,
           plugins: {
             legend: {
-              position: "right",
+              position: window.matchMedia("(max-width: 640px)").matches
+                ? "bottom"
+                : "right",
               labels: {
                 padding: 15,
                 font: {
