@@ -1196,7 +1196,7 @@
       projects: [
         {
           id: "cyprus-79",
-          name: "eOasis (Electronic Office Automation System and Integrated Sevices",
+          name: "eOasis (Electronic Office Automation System and Integrated Services",
           category: null,
           report: "2nd. Annual Report",
           year: 2023,
