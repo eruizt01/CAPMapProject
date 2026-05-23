@@ -20,6 +20,14 @@
       .replace(/'/g, "&#39;");
   }
 
+  function extractDomain(url) {
+    try {
+      return new URL(url).hostname.replace(/^www\./, "");
+    } catch {
+      return url;
+    }
+  }
+
   function normalizeProject(project, defaultYear) {
     if (!project || typeof project !== "object") {
       return null;
@@ -453,6 +461,7 @@
         filters.push(`matching "${this.currentFilters.search}"`);
       }
 
+      if (!filters.length && this.data.projects.length === 1) return "";
       return filters.length
         ? `Showing ${count} ${noun} ${filters.join(" ")}`
         : `Showing all ${count} ${noun}`;
@@ -525,6 +534,39 @@
       `;
     }
 
+    renderIdentityBlock() {
+      const info = this.getActiveAgencyInfo();
+      const { country, flagUrl } = this.data;
+
+      // City only — strip ", Country" suffix since country is already the heading
+      const city = info && info.mapLabel
+        ? info.mapLabel.split(",")[0].trim()
+        : "";
+
+      const domain = info && info.website ? extractDomain(info.website) : "";
+
+      const flagHtml = flagUrl
+        ? `<img src="${escapeHtml(flagUrl)}" alt="${escapeHtml(country)} flag" class="identity-flag">`
+        : "";
+
+      const sealHtml = info && info.logoUrl
+        ? `<img src="${escapeHtml(info.logoUrl)}" alt="${escapeHtml(info.acronym)}" class="identity-seal">`
+        : info
+          ? `<div class="identity-seal-monogram">${escapeHtml((info.acronym || "").slice(0, 4))}</div>`
+          : "";
+
+      return `
+        <div class="identity-stack">
+          <div class="identity-row identity-row--name">
+            ${flagHtml}
+            <h1 class="identity-country">${escapeHtml(country)}</h1>
+          </div>
+          ${sealHtml ? `<div class="identity-row identity-row--logo">${sealHtml}</div>` : ""}
+          ${info && info.mapLabel && info.location ? `<div class="identity-row"><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(info.location)}" class="identity-location" target="_blank" rel="noopener noreferrer">📍 ${escapeHtml(info.mapLabel)}</a></div>` : ""}
+          ${info && info.website ? `<div class="identity-row identity-row--indented"><a href="${escapeHtml(info.website)}" class="identity-domain" target="_blank" rel="noopener noreferrer">Official website ↗</a></div>` : ""}
+        </div>`;
+    }
+
     renderDashboardView() {
       const years = [
         ...new Set(this.data.projects.map((p) => String(p.year))),
@@ -550,8 +592,20 @@
                             <span>Computational Antitrust</span>
                             <span>→</span>
                             <span>${escapeHtml(this.data.country)}</span>
+                            <a href="${escapeHtml(this.data.backLinkHref)}" class="back-link back-link-right" data-dashboard-back="true">${escapeHtml(this.data.backLinkLabel)}</a>
                         </div>
 
+                        ${this.data.profile ? `
+                        <div class="country-header country-header--with-profile">
+                            <div class="country-identity">
+                                ${this.renderIdentityBlock()}
+                            </div>
+                            <div class="country-profile-box">
+                                <div class="country-profile-label">Computational Antitrust Profile</div>
+                                <p class="country-profile-text">${escapeHtml(this.data.profile)}</p>
+                            </div>
+                        </div>
+                        ` : `
                         <div class="country-header">
                             <div class="country-title-row">
                                 ${this.data.flagUrl ? `<img src="${escapeHtml(this.data.flagUrl)}" alt="${escapeHtml(this.data.country)} flag" class="country-flag">` : ""}
@@ -565,11 +619,12 @@
                                 <div id="agency-info-card">${this.renderAgencyCardContent()}</div>
                             </div>
                         </div>
+                        `}
                     </div>
 
                     <div class="at-a-glance">
                         <div class="stat-card">
-                            <h3>Years of Contribution</h3>
+                            <h3>Contributions</h3>
                             <div class="year-pills">
                                 <button type="button" class="year-pill" data-year="">All years</button>
                                 ${years.map((year) => `<button type="button" class="year-pill" data-year="${escapeHtml(year)}">${escapeHtml(year)}</button>`).join("")}
@@ -581,7 +636,7 @@
                             <h3>Total Projects</h3>
                             <div class="total-projects">${this.data.projects.length}</div>
                             <div class="project-label">${this.data.projects.length === 1 ? "Total project" : "Total projects"}</div>
-                            <div id="visible-projects-summary" class="visible-projects-summary" data-testid="visible-projects-summary">Showing all ${this.data.projects.length} ${this.data.projects.length === 1 ? "project" : "projects"}</div>
+                            <div id="visible-projects-summary" class="visible-projects-summary" data-testid="visible-projects-summary">${this.data.projects.length === 1 ? "" : `Showing all ${this.data.projects.length} projects`}</div>
                         </div>
 
                         <div class="stat-card">
