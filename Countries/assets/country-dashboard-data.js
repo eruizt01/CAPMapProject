@@ -1,6 +1,7 @@
 (function (window) {
   window.CountryDashboardData = Object.freeze({
     Argentina: {
+      agencyInfo: { acronym: "CNDC", fullName: "", location: "", website: "https://www.argentina.gob.ar/autoridaddecompetencia" },
       projects: [
         {
           id: "argentina-2",
@@ -83,6 +84,7 @@
       ],
     },
     Armenia: {
+      agencyInfo: { acronym: "CPC", fullName: "", location: "", website: "https://competition.am/en/" },
       projects: [
         {
           id: "armenia-7",
@@ -119,6 +121,7 @@
       ],
     },
     Australia: {
+      agencyInfo: { acronym: "ACCC", fullName: "", location: "", website: "https://www.accc.gov.au/" },
       projects: [
         {
           id: "australia-9",
@@ -327,6 +330,7 @@
       ],
     },
     Austria: {
+      agencyInfo: { acronym: "AFCA", fullName: "", location: "", website: "https://www.bwb.gv.at/en/" },
       projects: [
         {
           id: "austria-22",
@@ -392,6 +396,7 @@
       ],
     },
     Brazil: {
+      agencyInfo: { acronym: "CADE", fullName: "", location: "", website: "https://www.gov.br/cade/en/pagina-inicial-ingles" },
       projects: [
         {
           id: "brazil-26",
@@ -570,6 +575,7 @@
       ],
     },
     Bulgaria: {
+      agencyInfo: { acronym: "CPC", fullName: "", location: "", website: "https://www.cpc.bg/en/homepage" },
       projects: [
         {
           id: "bulgaria-37",
@@ -606,6 +612,7 @@
       ],
     },
     Canada: {
+      agencyInfo: { acronym: "CCB", fullName: "", location: "", website: "https://competition-bureau.canada.ca/en/competition-bureau-canada" },
       projects: [
         {
           id: "canada-39",
@@ -818,6 +825,7 @@
       ],
     },
     "Caribbean Community": {
+      agencyInfo: { acronym: "CARICOM", fullName: "", location: "", website: "https://caricomcompetitioncommission.org/" },
       projects: [
         {
           id: "caribbean-community-52",
@@ -838,6 +846,7 @@
       ],
     },
     Chile: {
+      agencyInfo: { acronym: "FNE", fullName: "", location: "", website: "https://www.fne.gob.cl/en/" },
       projects: [
         {
           id: "chile-58",
@@ -970,6 +979,7 @@
       ],
     },
     Colombia: {
+      agencyInfo: { acronym: "SIC", fullName: "", location: "", website: "https://www.sic.gov.co/en/about-us" },
       projects: [
         {
           id: "colombia-66",
@@ -1182,6 +1192,7 @@
       ],
     },
     Cyprus: {
+      agencyInfo: { acronym: "Commission for the Protection of Competition", fullName: "", location: "", website: "https://www.competition.gov.cy/competition/competition.nsf/index_en/index_en?opendocument=" },
       projects: [
         {
           id: "cyprus-79",
@@ -1202,6 +1213,7 @@
       ],
     },
     Czechia: {
+      agencyInfo: { acronym: "Czech Office for the Protection of Competition", fullName: "", location: "", website: "https://uohs.gov.cz/en/homepage.html" },
       projects: [
         {
           id: "czechia-80",
@@ -1364,6 +1376,7 @@
       ],
     },
     Denmark: {
+      agencyInfo: { acronym: "DCCA", fullName: "", location: "", website: "https://en.kfst.dk/" },
       projects: [
         {
           id: "denmark-90",
@@ -1432,6 +1445,7 @@
       ],
     },
     "El Salvador": {
+      agencyInfo: { acronym: "SC", fullName: "", location: "", website: "https://www.sc.gob.sv/" },
       projects: [
         {
           id: "el-salvador-94",
@@ -1458,6 +1472,7 @@
         "No contribution rows were available for this jurisdiction in the provided workbook.",
     },
     Finland: {
+      agencyInfo: { acronym: "FCCA", fullName: "", location: "", website: "https://www.kkv.fi/en/" },
       projects: [
         {
           id: "finland-95",
@@ -1525,6 +1540,7 @@
       ],
     },
     France: {
+      agencyInfo: { acronym: "FCA", fullName: "", location: "", website: "https://www.autoritedelaconcurrence.fr/en" },
       projects: [
         {
           id: "france-99",
@@ -1694,6 +1710,7 @@
         "No contribution rows were available for this jurisdiction in the provided workbook.",
     },
     Greece: {
+      agencyInfo: { acronym: "HCC", fullName: "", location: "", website: "https://www.epant.gr/en/" },
       projects: [
         {
           id: "greece-109",
@@ -1874,6 +1891,7 @@
       ],
     },
     Hungary: {
+      agencyInfo: { acronym: "GVH", fullName: "", location: "", website: "https://www.gvh.hu/en/" },
       projects: [
         {
           id: "hungary-120",
@@ -1928,6 +1946,7 @@
         "No contribution rows were available for this jurisdiction in the provided workbook.",
     },
     Italy: {
+      agencyInfo: { acronym: "ICA", fullName: "", location: "", website: "https://en.agcm.it/en/" },
       projects: [
         {
           id: "italy-122",
@@ -2044,6 +2063,7 @@
       ],
     },
     Japan: {
+      agencyInfo: { acronym: "JFTC", fullName: "", location: "", website: "https://www.jftc.go.jp/en/" },
       projects: [
         {
           id: "japan-129",
@@ -2080,6 +2100,7 @@
       ],
     },
     Kenya: {
+      agencyInfo: { acronym: "CAK", fullName: "", location: "", website: "https://www.cak.go.ke/" },
       projects: [
         {
           id: "kenya-131",
@@ -2131,6 +2152,7 @@
       ],
     },
     Lithuania: {
+      agencyInfo: { acronym: "LCC", fullName: "", location: "", website: "https://kt.gov.lt/en" },
       projects: [
         {
           id: "lithuania-134",
@@ -2215,6 +2237,7 @@
       ],
     },
     Luxembourg: {
+      agencyInfo: { acronym: "LCA", fullName: "", location: "", website: "https://concurrence.public.lu/fr.html" },
       projects: [
         {
           id: "luxembourg-139",
@@ -2299,6 +2322,7 @@
       ],
     },
     Malawi: {
+      agencyInfo: { acronym: "CFTC", fullName: "", location: "", website: "https://www.cftc.mw/" },
       projects: [
         {
           id: "malawi-144",
@@ -2319,6 +2343,7 @@
       ],
     },
     Malaysia: {
+      agencyInfo: { acronym: "MyCC", fullName: "", location: "", website: "https://www.mycc.gov.my/" },
       projects: [
         {
           id: "malaysia-145",
@@ -2355,6 +2380,7 @@
       ],
     },
     Mexico: {
+      agencyInfo: { acronym: "COFECE", fullName: "", location: "", website: "https://www.cofece.mx/?lang=en" },
       projects: [
         {
           id: "mexico-147",
@@ -2503,6 +2529,7 @@
       ],
     },
     Netherlands: {
+      agencyInfo: { acronym: "ACM", fullName: "", location: "", website: "https://www.acm.nl/en" },
       projects: [
         {
           id: "netherlands-156",
@@ -2567,6 +2594,7 @@
         "No contribution rows were available for this jurisdiction in the provided workbook.",
     },
     Pakistan: {
+      agencyInfo: { acronym: "CCP", fullName: "", location: "", website: "https://www.cc.gov.pk/" },
       projects: [
         {
           id: "pakistan-159",
@@ -2651,6 +2679,7 @@
       ],
     },
     Peru: {
+      agencyInfo: { acronym: "INDECOPI", fullName: "", location: "", website: "https://www.gob.pe/indecopi" },
       projects: [
         {
           id: "peru-164",
@@ -2687,6 +2716,7 @@
       ],
     },
     Poland: {
+      agencyInfo: { acronym: "UOKiK", fullName: "", location: "", website: "https://uokik.gov.pl/en" },
       projects: [
         {
           id: "poland-166",
@@ -2809,6 +2839,7 @@
         "No contribution rows were available for this jurisdiction in the provided workbook.",
     },
     Romania: {
+      agencyInfo: { acronym: "RCC", fullName: "", location: "", website: "https://www.consiliulconcurentei.ro/en/" },
       projects: [
         {
           id: "romania-173",
@@ -2861,6 +2892,7 @@
       ],
     },
     "Saudi Arabia": {
+      agencyInfo: { acronym: "GAC", fullName: "", location: "", website: "https://gac.gov.sa/index_en.aspx" },
       projects: [
         {
           id: "saudi-arabia-176",
@@ -2945,6 +2977,7 @@
       ],
     },
     Serbia: {
+      agencyInfo: { acronym: "Commission for Protection of Competition", fullName: "", location: "", website: "https://www.kzk.org.rs/en/" },
       projects: [
         {
           id: "serbia-181",
@@ -2964,6 +2997,7 @@
       ],
     },
     Singapore: {
+      agencyInfo: { acronym: "CCCS", fullName: "", location: "", website: "https://www.ccs.gov.sg/" },
       projects: [
         {
           id: "singapore-182",
@@ -3160,6 +3194,7 @@
       ],
     },
     Slovakia: {
+      agencyInfo: { acronym: "Antimonopoly Office", fullName: "", location: "", website: "https://www.antimon.gov.sk/en/" },
       projects: [
         {
           id: "slovakia-194",
@@ -3244,6 +3279,7 @@
       ],
     },
     Slovenia: {
+      agencyInfo: { acronym: "Competition Protection Agency", fullName: "", location: "", website: "https://www.varstvo-konkurence.si/en/" },
       projects: [
         {
           id: "slovenia-199",
@@ -3308,6 +3344,10 @@
         "No contribution rows were available for this jurisdiction in the provided workbook.",
     },
     Spain: {
+      agencyInfo: {
+        "CNMC": { acronym: "CNMC", fullName: "", location: "", website: "https://www.cnmc.es/en" },
+        "ACCO": { acronym: "ACCO", fullName: "", location: "", website: "https://acco.gencat.cat/ca/inici/" },
+      },
       agencyYearDownloads: {
         ACCO: {
           2022: "Reports/Spain 1st Report.pdf",
@@ -3585,6 +3625,7 @@
         "No contribution rows were available for this jurisdiction in the provided workbook.",
     },
     Taiwan: {
+      agencyInfo: { acronym: "TFTC", fullName: "", location: "", website: "https://www.ftc.gov.tw/internet/english/index.aspx" },
       projects: [
         {
           id: "taiwan-212",
@@ -3733,6 +3774,7 @@
       ],
     },
     Turkey: {
+      agencyInfo: { acronym: "TCA", fullName: "", location: "", website: "https://www.rekabet.gov.tr/en" },
       projects: [
         {
           id: "turkey-221",
@@ -3801,6 +3843,7 @@
       ],
     },
     UK: {
+      agencyInfo: { acronym: "CMA", fullName: "", location: "", website: "https://www.gov.uk/government/organisations/competition-and-markets-authority" },
       projects: [
         {
           id: "uk-225",

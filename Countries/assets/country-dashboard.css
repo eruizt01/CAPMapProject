@@ -119,8 +119,63 @@ h1 {
   font-size: 15px;
 }
 
-.country-hero-back {
+/* Agency Info Panel (top-right of country hero) */
+.agency-info-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
   flex-shrink: 0;
+}
+
+.agency-card {
+  background: #f8fafc;
+  border: 1px solid #dce4ec;
+  border-radius: 8px;
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 210px;
+  text-align: right;
+}
+
+.agency-card-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #7b8a97;
+}
+
+.agency-card-acronym {
+  font-size: 18px;
+  font-weight: 700;
+  color: #223548;
+}
+
+.agency-card-fullname {
+  font-size: 13px;
+  color: #435466;
+  line-height: 1.4;
+}
+
+.agency-card-location {
+  font-size: 13px;
+  color: #7b8a97;
+}
+
+.agency-card-website {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.agency-card-website:hover {
+  text-decoration: underline;
 }
 
 /* At-a-Glance Panel */
@@ -817,8 +872,14 @@ h1 {
     flex-direction: column;
   }
 
-  .country-hero-back {
-    width: fit-content;
+  .agency-info-panel {
+    align-items: flex-start;
+  }
+
+  .agency-card {
+    text-align: left;
+    min-width: 0;
+    width: 100%;
   }
 
   .at-a-glance {

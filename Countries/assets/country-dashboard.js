@@ -192,6 +192,7 @@
         projects,
         yearDownloads: safeConfig.yearDownloads || registryDownloads || {},
         agencyYearDownloads: safeConfig.agencyYearDownloads || {},
+        agencyInfo: safeConfig.agencyInfo || null,
         backLinkHref: safeConfig.backLinkHref || "../CAPMap.html",
         backLinkLabel: safeConfig.backLinkLabel || "← Back to map",
         breadcrumbHomeHref: safeConfig.breadcrumbHomeHref || "../CAPMap.html",
@@ -429,6 +430,11 @@
       if (countrySubtitle) {
         countrySubtitle.textContent = this.getVisibleProjectsSummary();
       }
+
+      const agencyInfoCard = root.querySelector("#agency-info-card");
+      if (agencyInfoCard) {
+        agencyInfoCard.innerHTML = this.renderAgencyCardContent();
+      }
     }
 
     getVisibleProjectsSummary() {
@@ -497,6 +503,31 @@
             `;
     }
 
+    getActiveAgencyInfo() {
+      const ai = this.data.agencyInfo;
+      if (!ai) return null;
+      // Single-agency: has an `acronym` property directly
+      if (ai.acronym !== undefined) return ai;
+      // Multi-agency: pick by current filter
+      const selected = this.currentFilters.agency;
+      if (selected !== "all" && ai[selected]) return ai[selected];
+      return null;
+    }
+
+    renderAgencyCardContent() {
+      const info = this.getActiveAgencyInfo();
+      if (!info) return "";
+      return `
+        <div class="agency-card">
+          <div class="agency-card-label">Agency</div>
+          <div class="agency-card-acronym">${escapeHtml(info.acronym)}</div>
+          ${info.fullName ? `<div class="agency-card-fullname">${escapeHtml(info.fullName)}</div>` : ""}
+          ${info.location ? `<div class="agency-card-location">${escapeHtml(info.location)}</div>` : ""}
+          ${info.website ? `<a href="${escapeHtml(info.website)}" class="agency-card-website" target="_blank" rel="noopener noreferrer">Visit official website ↗</a>` : ""}
+        </div>
+      `;
+    }
+
     renderDashboardView() {
       const years = [
         ...new Set(this.data.projects.map((p) => String(p.year))),
@@ -532,7 +563,10 @@
                                     <p class="country-subtitle">${escapeHtml(this.getVisibleProjectsSummary())}</p>
                                 </div>
                             </div>
-                            <a href="${escapeHtml(this.data.backLinkHref)}" class="back-link country-hero-back" data-dashboard-back="true">${escapeHtml(this.data.backLinkLabel)}</a>
+                            <div class="agency-info-panel">
+                                <a href="${escapeHtml(this.data.backLinkHref)}" class="back-link" data-dashboard-back="true">${escapeHtml(this.data.backLinkLabel)}</a>
+                                <div id="agency-info-card">${this.renderAgencyCardContent()}</div>
+                            </div>
                         </div>
                     </div>
 
