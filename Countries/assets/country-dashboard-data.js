@@ -333,7 +333,7 @@
       ],
     },
     Austria: {
-      profile: "Profile coming soon.",
+      profile: "Austria's AFCA is building computational antitrust capacity through forensics, data analytics, and AI. In 2024/2025, it expanded its year-old Forensics Department into a Department for Forensics, Data Analytics and AI, now one of the agency's largest spending areas, signaling a structural commitment to digital enforcement. Its current strengths are forensic and econometric. FTK-Central and FTK support eDiscovery, predictive coding, email threading, and recovery of encrypted or deleted evidence from dawn raids, while economists in case teams use Stata, R, Matlab, Python, and Castor CoPilot for merger effects analysis and sector inquiries. AI use so far remains within a controlled test environment, but the forward-looking work centers on a newly established cartel-screening team focused on systematic data collection and procurement screening, alongside plans for data scraping and an in-house AI tool, likely built around a large language model.",
       agencyInfo: { acronym: "AFCA", fullName: "", location: "Radetzkystra\u00dfe 2, 1st Floor, A-1030 Vienna, Austria", mapLabel: "Vienna, Austria", logoUrl: "assets/agency-logos/Austria_AFCA_BWB.png", website: "https://www.bwb.gv.at/en/" },
       projects: [
         {
