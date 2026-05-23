@@ -1,7 +1,7 @@
 (function (window) {
   window.CountryDashboardData = Object.freeze({
     Argentina: {
-      agencyInfo: { acronym: "CNDC", fullName: "", location: "Av. Pres. Julio A. Roca 694, C1067ABO, Ciudad Aut\u00f3noma de Buenos Aires, Argentina", mapLabel: "Buenos Aires, Argentina", website: "https://www.argentina.gob.ar/autoridaddecompetencia" },
+      agencyInfo: { acronym: "CNDC", fullName: "", location: "Av. Pres. Julio A. Roca 694, C1067ABO, Ciudad Aut\u00f3noma de Buenos Aires, Argentina", mapLabel: "Buenos Aires, Argentina", logoUrl: "assets/agency-logos/Argentina_CNDC_ANC.png", website: "https://www.argentina.gob.ar/autoridaddecompetencia" },
       projects: [
         {
           id: "argentina-2",
@@ -84,7 +84,7 @@
       ],
     },
     Armenia: {
-      agencyInfo: { acronym: "CPC", fullName: "", location: "4 Tigran Mets Street, Yerevan 0010, Armenia", mapLabel: "Yerevan, Armenia", website: "https://competition.am/en/" },
+      agencyInfo: { acronym: "CPC", fullName: "", location: "4 Tigran Mets Street, Yerevan 0010, Armenia", mapLabel: "Yerevan, Armenia", logoUrl: "assets/agency-logos/Armenia_CPC.png", website: "https://competition.am/en/" },
       projects: [
         {
           id: "armenia-7",
@@ -121,7 +121,7 @@
       ],
     },
     Australia: {
-      agencyInfo: { acronym: "ACCC", fullName: "", location: "23 Marcus Clarke Street, Canberra ACT 2601, Australia", mapLabel: "Canberra, Australia", website: "https://www.accc.gov.au/" },
+      agencyInfo: { acronym: "ACCC", fullName: "", location: "23 Marcus Clarke Street, Canberra ACT 2601, Australia", mapLabel: "Canberra, Australia", logoUrl: "assets/agency-logos/Australia_ACCC.png", website: "https://www.accc.gov.au/" },
       projects: [
         {
           id: "australia-9",
@@ -330,7 +330,7 @@
       ],
     },
     Austria: {
-      agencyInfo: { acronym: "AFCA", fullName: "", location: "Radetzkystra\u00dfe 2, 1st Floor, A-1030 Vienna, Austria", mapLabel: "Vienna, Austria", website: "https://www.bwb.gv.at/en/" },
+      agencyInfo: { acronym: "AFCA", fullName: "", location: "Radetzkystra\u00dfe 2, 1st Floor, A-1030 Vienna, Austria", mapLabel: "Vienna, Austria", logoUrl: "assets/agency-logos/Austria_AFCA_BWB.png", website: "https://www.bwb.gv.at/en/" },
       projects: [
         {
           id: "austria-22",
@@ -396,7 +396,7 @@
       ],
     },
     Brazil: {
-      agencyInfo: { acronym: "CADE", fullName: "", location: "SEPN, Entrequadra 515, Conjunto D, Lote 4, Edif\u00edcio Carlos Taurisano, 70770-504 Bras\u00edlia/DF, Brazil", mapLabel: "Bras\u00edlia, Brazil", website: "https://www.gov.br/cade/en/pagina-inicial-ingles" },
+      agencyInfo: { acronym: "CADE", fullName: "", location: "SEPN, Entrequadra 515, Conjunto D, Lote 4, Edif\u00edcio Carlos Taurisano, 70770-504 Bras\u00edlia/DF, Brazil", mapLabel: "Bras\u00edlia, Brazil", logoUrl: "assets/agency-logos/Brazil_CADE.png", website: "https://www.gov.br/cade/en/pagina-inicial-ingles" },
       projects: [
         {
           id: "brazil-26",
@@ -575,7 +575,7 @@
       ],
     },
     Bulgaria: {
-      agencyInfo: { acronym: "CPC", fullName: "", location: "bul. \"Vitosha\" 18, Sofia, Bulgaria", mapLabel: "Sofia, Bulgaria", website: "https://www.cpc.bg/en/homepage" },
+      agencyInfo: { acronym: "CPC", fullName: "", location: "bul. \"Vitosha\" 18, Sofia, Bulgaria", mapLabel: "Sofia, Bulgaria", logoUrl: "assets/agency-logos/Bulgaria_CPC.png", website: "https://www.cpc.bg/en/homepage" },
       projects: [
         {
           id: "bulgaria-37",
@@ -612,7 +612,7 @@
       ],
     },
     Canada: {
-      agencyInfo: { acronym: "CCB", fullName: "", location: "Place du Portage I, 50 Victoria Street, Room C-114, Gatineau, Quebec K1A 0C9, Canada", mapLabel: "Gatineau, Canada", website: "https://competition-bureau.canada.ca/en/competition-bureau-canada" },
+      agencyInfo: { acronym: "CCB", fullName: "", location: "Place du Portage I, 50 Victoria Street, Room C-114, Gatineau, Quebec K1A 0C9, Canada", mapLabel: "Gatineau, Canada", logoUrl: "assets/agency-logos/Canada_CCB.png", website: "https://competition-bureau.canada.ca/en/competition-bureau-canada" },
       projects: [
         {
           id: "canada-39",
@@ -825,7 +825,8 @@
       ],
     },
     "Caribbean Community": {
-      agencyInfo: { acronym: "CARICOM", fullName: "", location: "Hendrikstraat #69, Paramaribo, Suriname", mapLabel: "Paramaribo, Suriname", website: "https://caricomcompetitioncommission.org/" },
+      flagUrl: "assets/flags/caricom.png",
+      agencyInfo: { acronym: "CARICOM", fullName: "", location: "Hendrikstraat #69, Paramaribo, Suriname", mapLabel: "Paramaribo, Suriname", logoUrl: "assets/agency-logos/Caribbean_CARICOM_Competition_Commission.png", website: "https://caricomcompetitioncommission.org/" },
       projects: [
         {
           id: "caribbean-community-52",
@@ -846,7 +847,7 @@
       ],
     },
     Chile: {
-      agencyInfo: { acronym: "FNE", fullName: "", location: "Hu\u00e9rfanos N\u00ba 670, Floors 8, 9 and 10, Santiago, Chile", mapLabel: "Santiago, Chile", website: "https://www.fne.gob.cl/en/" },
+      agencyInfo: { acronym: "FNE", fullName: "", location: "Hu\u00e9rfanos N\u00ba 670, Floors 8, 9 and 10, Santiago, Chile", mapLabel: "Santiago, Chile", logoUrl: "assets/agency-logos/Chile_FNE.png", website: "https://www.fne.gob.cl/en/" },
       projects: [
         {
           id: "chile-58",
@@ -979,7 +980,7 @@
       ],
     },
     Colombia: {
-      agencyInfo: { acronym: "SIC", fullName: "", location: "Calle 24 No. 7-43, Bogot\u00e1 D.C., Colombia, C\u00f3digo Postal 110311", mapLabel: "Bogot\u00e1, Colombia", website: "https://www.sic.gov.co/en/about-us" },
+      agencyInfo: { acronym: "SIC", fullName: "", location: "Calle 24 No. 7-43, Bogot\u00e1 D.C., Colombia, C\u00f3digo Postal 110311", mapLabel: "Bogot\u00e1, Colombia", logoUrl: "assets/agency-logos/Colombia_SIC.png", website: "https://www.sic.gov.co/en/about-us" },
       projects: [
         {
           id: "colombia-66",
@@ -1192,7 +1193,7 @@
       ],
     },
     Cyprus: {
-      agencyInfo: { acronym: "Commission for the Protection of Competition", fullName: "", location: "53 Strovolos Avenue, Victory Building, 2018 Strovolos, Nicosia, Cyprus", mapLabel: "Nicosia, Cyprus", website: "https://www.competition.gov.cy/competition/competition.nsf/index_en/index_en?opendocument=" },
+      agencyInfo: { acronym: "Commission for the Protection of Competition", fullName: "", location: "53 Strovolos Avenue, Victory Building, 2018 Strovolos, Nicosia, Cyprus", mapLabel: "Nicosia, Cyprus", logoUrl: "assets/agency-logos/Cyprus_CPC.png", website: "https://www.competition.gov.cy/competition/competition.nsf/index_en/index_en?opendocument=" },
       projects: [
         {
           id: "cyprus-79",
@@ -1213,7 +1214,7 @@
       ],
     },
     Czechia: {
-      agencyInfo: { acronym: "Czech Office for the Protection of Competition", fullName: "", location: "t\u0159\u00edda Kpt. Jaro\u0161e 7, 602 00 Brno, Czech Republic", mapLabel: "Brno, Czech Republic", website: "https://uohs.gov.cz/en/homepage.html" },
+      agencyInfo: { acronym: "Czech Office for the Protection of Competition", fullName: "", location: "t\u0159\u00edda Kpt. Jaro\u0161e 7, 602 00 Brno, Czech Republic", mapLabel: "Brno, Czech Republic", logoUrl: "assets/agency-logos/Czechia_UOHS.png", website: "https://uohs.gov.cz/en/homepage.html" },
       projects: [
         {
           id: "czechia-80",
@@ -1376,7 +1377,7 @@
       ],
     },
     Denmark: {
-      agencyInfo: { acronym: "DCCA", fullName: "", location: "Carl Jacobsens Vej 35, 2500 Valby, Denmark", mapLabel: "Valby, Denmark", website: "https://en.kfst.dk/" },
+      agencyInfo: { acronym: "DCCA", fullName: "", location: "Carl Jacobsens Vej 35, 2500 Valby, Denmark", mapLabel: "Valby, Denmark", logoUrl: "assets/agency-logos/Denmark_DCCA.png", website: "https://en.kfst.dk/" },
       projects: [
         {
           id: "denmark-90",
@@ -1445,7 +1446,7 @@
       ],
     },
     "El Salvador": {
-      agencyInfo: { acronym: "SC", fullName: "", location: "Edificio Madre Selva, Primer Nivel, Calzada El Almendro y 1a Av. El Espino No. 82, Antiguo Cuscatl\u00e1n, La Libertad, El Salvador", mapLabel: "Antiguo Cuscatl\u00e1n, El Salvador", website: "https://www.sc.gob.sv/" },
+      agencyInfo: { acronym: "SC", fullName: "", location: "Edificio Madre Selva, Primer Nivel, Calzada El Almendro y 1a Av. El Espino No. 82, Antiguo Cuscatl\u00e1n, La Libertad, El Salvador", mapLabel: "Antiguo Cuscatl\u00e1n, El Salvador", logoUrl: "assets/agency-logos/El_Salvador_SC.png", website: "https://www.sc.gob.sv/" },
       projects: [
         {
           id: "el-salvador-94",
@@ -1472,7 +1473,7 @@
         "No contribution rows were available for this jurisdiction in the provided workbook.",
     },
     Finland: {
-      agencyInfo: { acronym: "FCCA", fullName: "", location: "Lintulahdenkuja 2, 00530 Helsinki, Finland", mapLabel: "Helsinki, Finland", website: "https://www.kkv.fi/en/" },
+      agencyInfo: { acronym: "FCCA", fullName: "", location: "Lintulahdenkuja 2, 00530 Helsinki, Finland", mapLabel: "Helsinki, Finland", logoUrl: "assets/agency-logos/Finland_FCCA.png", website: "https://www.kkv.fi/en/" },
       projects: [
         {
           id: "finland-95",
@@ -1540,7 +1541,7 @@
       ],
     },
     France: {
-      agencyInfo: { acronym: "FCA", fullName: "", location: "11 rue de l'\u00c9chelle, 75001 Paris, France", mapLabel: "Paris, France", website: "https://www.autoritedelaconcurrence.fr/en" },
+      agencyInfo: { acronym: "FCA", fullName: "", location: "11 rue de l'\u00c9chelle, 75001 Paris, France", mapLabel: "Paris, France", logoUrl: "assets/agency-logos/France_FCA.png", website: "https://www.autoritedelaconcurrence.fr/en" },
       projects: [
         {
           id: "france-99",
@@ -1710,7 +1711,7 @@
         "No contribution rows were available for this jurisdiction in the provided workbook.",
     },
     Greece: {
-      agencyInfo: { acronym: "HCC", fullName: "", location: "Kotsika 1A & Patision, 10434 Athens, Greece", mapLabel: "Athens, Greece", website: "https://www.epant.gr/en/" },
+      agencyInfo: { acronym: "HCC", fullName: "", location: "Kotsika 1A & Patision, 10434 Athens, Greece", mapLabel: "Athens, Greece", logoUrl: "assets/agency-logos/Greece_HCC.png", website: "https://www.epant.gr/en/" },
       projects: [
         {
           id: "greece-109",
@@ -1891,7 +1892,7 @@
       ],
     },
     Hungary: {
-      agencyInfo: { acronym: "GVH", fullName: "", location: "Riad\u00f3 u. 5-11, H-1026 Budapest, Hungary", mapLabel: "Budapest, Hungary", website: "https://www.gvh.hu/en/" },
+      agencyInfo: { acronym: "GVH", fullName: "", location: "Riad\u00f3 u. 5-11, H-1026 Budapest, Hungary", mapLabel: "Budapest, Hungary", logoUrl: "assets/agency-logos/Hungary_GVH.png", website: "https://www.gvh.hu/en/" },
       projects: [
         {
           id: "hungary-120",
@@ -1946,7 +1947,7 @@
         "No contribution rows were available for this jurisdiction in the provided workbook.",
     },
     Italy: {
-      agencyInfo: { acronym: "ICA", fullName: "", location: "Piazza G. Verdi 6/A, 00198 Rome, Italy", mapLabel: "Rome, Italy", website: "https://en.agcm.it/en/" },
+      agencyInfo: { acronym: "ICA", fullName: "", location: "Piazza G. Verdi 6/A, 00198 Rome, Italy", mapLabel: "Rome, Italy", logoUrl: "assets/agency-logos/Italy_AGCM.png", website: "https://en.agcm.it/en/" },
       projects: [
         {
           id: "italy-122",
@@ -2063,7 +2064,7 @@
       ],
     },
     Japan: {
-      agencyInfo: { acronym: "JFTC", fullName: "", location: "Toranomon Alcea Tower, 2-2-3 Toranomon, Minato-ku, Tokyo 105-0001, Japan", mapLabel: "Tokyo, Japan", website: "https://www.jftc.go.jp/en/" },
+      agencyInfo: { acronym: "JFTC", fullName: "", location: "Toranomon Alcea Tower, 2-2-3 Toranomon, Minato-ku, Tokyo 105-0001, Japan", mapLabel: "Tokyo, Japan", logoUrl: "assets/agency-logos/Japan_JFTC.png", website: "https://www.jftc.go.jp/en/" },
       projects: [
         {
           id: "japan-129",
@@ -2100,7 +2101,7 @@
       ],
     },
     Kenya: {
-      agencyInfo: { acronym: "CAK", fullName: "", location: "CBK Pension Towers, 15th Floor, Harambee Avenue, Nairobi, Kenya", mapLabel: "Nairobi, Kenya", website: "https://www.cak.go.ke/" },
+      agencyInfo: { acronym: "CAK", fullName: "", location: "CBK Pension Towers, 15th Floor, Harambee Avenue, Nairobi, Kenya", mapLabel: "Nairobi, Kenya", logoUrl: "assets/agency-logos/Kenya_CAK.png", website: "https://www.cak.go.ke/" },
       projects: [
         {
           id: "kenya-131",
@@ -2152,7 +2153,7 @@
       ],
     },
     Lithuania: {
-      agencyInfo: { acronym: "LCC", fullName: "", location: "Jogailos g. 14, LT-01116 Vilnius, Lithuania", mapLabel: "Vilnius, Lithuania", website: "https://kt.gov.lt/en" },
+      agencyInfo: { acronym: "LCC", fullName: "", location: "Jogailos g. 14, LT-01116 Vilnius, Lithuania", mapLabel: "Vilnius, Lithuania", logoUrl: "assets/agency-logos/Lithuania_LCC.png", website: "https://kt.gov.lt/en" },
       projects: [
         {
           id: "lithuania-134",
@@ -2237,7 +2238,7 @@
       ],
     },
     Luxembourg: {
-      agencyInfo: { acronym: "LCA", fullName: "", location: "2a rue d'Anvers, L-1130 Luxembourg, Luxembourg", mapLabel: "Luxembourg City, Luxembourg", website: "https://concurrence.public.lu/fr.html" },
+      agencyInfo: { acronym: "LCA", fullName: "", location: "2a rue d'Anvers, L-1130 Luxembourg, Luxembourg", mapLabel: "Luxembourg City, Luxembourg", logoUrl: "assets/agency-logos/Luxembourg_LCA.png", website: "https://concurrence.public.lu/fr.html" },
       projects: [
         {
           id: "luxembourg-139",
@@ -2322,7 +2323,7 @@
       ],
     },
     Malawi: {
-      agencyInfo: { acronym: "CFTC", fullName: "", location: "MERA Office Complex, Along Convention Drive, Next to Lilongwe Civic Offices, Lilongwe, Malawi", mapLabel: "Lilongwe, Malawi", website: "https://www.cftc.mw/" },
+      agencyInfo: { acronym: "CFTC", fullName: "", location: "MERA Office Complex, Along Convention Drive, Next to Lilongwe Civic Offices, Lilongwe, Malawi", mapLabel: "Lilongwe, Malawi", logoUrl: "assets/agency-logos/Malawi_CFTC.png", website: "https://www.cftc.mw/" },
       projects: [
         {
           id: "malawi-144",
@@ -2343,7 +2344,7 @@
       ],
     },
     Malaysia: {
-      agencyInfo: { acronym: "MyCC", fullName: "", location: "Level 15, Menara SSM @Sentral, No. 7 Jalan Stesen Sentral 5, Kuala Lumpur Sentral, 50623 Kuala Lumpur, Malaysia", mapLabel: "Kuala Lumpur, Malaysia", website: "https://www.mycc.gov.my/" },
+      agencyInfo: { acronym: "MyCC", fullName: "", location: "Level 15, Menara SSM @Sentral, No. 7 Jalan Stesen Sentral 5, Kuala Lumpur Sentral, 50623 Kuala Lumpur, Malaysia", mapLabel: "Kuala Lumpur, Malaysia", logoUrl: "assets/agency-logos/Malaysia_MyCC.png", website: "https://www.mycc.gov.my/" },
       projects: [
         {
           id: "malaysia-145",
@@ -2380,7 +2381,7 @@
       ],
     },
     Mexico: {
-      agencyInfo: { acronym: "COFECE", fullName: "", location: "Avenida Revoluci\u00f3n 725, Colonia Santa Mar\u00eda Nonoalco, Alcald\u00eda Benito Ju\u00e1rez, Ciudad de M\u00e9xico, C.P. 03700, Mexico", mapLabel: "Mexico City, Mexico", website: "https://www.cofece.mx/?lang=en" },
+      agencyInfo: { acronym: "COFECE", fullName: "", location: "Avenida Revoluci\u00f3n 725, Colonia Santa Mar\u00eda Nonoalco, Alcald\u00eda Benito Ju\u00e1rez, Ciudad de M\u00e9xico, C.P. 03700, Mexico", mapLabel: "Mexico City, Mexico", logoUrl: "assets/agency-logos/Mexico_COFECE.png", website: "https://www.cofece.mx/?lang=en" },
       projects: [
         {
           id: "mexico-147",
@@ -2529,7 +2530,7 @@
       ],
     },
     Netherlands: {
-      agencyInfo: { acronym: "ACM", fullName: "", location: "Muzenstraat 41, 2511 WB The Hague, Netherlands", mapLabel: "The Hague, Netherlands", website: "https://www.acm.nl/en" },
+      agencyInfo: { acronym: "ACM", fullName: "", location: "Muzenstraat 41, 2511 WB The Hague, Netherlands", mapLabel: "The Hague, Netherlands", logoUrl: "assets/agency-logos/Netherlands_ACM.png", website: "https://www.acm.nl/en" },
       projects: [
         {
           id: "netherlands-156",
@@ -2594,7 +2595,7 @@
         "No contribution rows were available for this jurisdiction in the provided workbook.",
     },
     Pakistan: {
-      agencyInfo: { acronym: "CCP", fullName: "", location: "7th Floor South, ISE Towers, 55-B Jinnah Avenue, Islamabad, Pakistan", mapLabel: "Islamabad, Pakistan", website: "https://www.cc.gov.pk/" },
+      agencyInfo: { acronym: "CCP", fullName: "", location: "7th Floor South, ISE Towers, 55-B Jinnah Avenue, Islamabad, Pakistan", mapLabel: "Islamabad, Pakistan", logoUrl: "assets/agency-logos/Pakistan_CCP.png", website: "https://www.cc.gov.pk/" },
       projects: [
         {
           id: "pakistan-159",
@@ -2679,7 +2680,7 @@
       ],
     },
     Peru: {
-      agencyInfo: { acronym: "INDECOPI", fullName: "", location: "Calle De la Prosa 104, San Borja, Lima 15034, Peru", mapLabel: "Lima, Peru", website: "https://www.gob.pe/indecopi" },
+      agencyInfo: { acronym: "INDECOPI", fullName: "", location: "Calle De la Prosa 104, San Borja, Lima 15034, Peru", mapLabel: "Lima, Peru", logoUrl: "assets/agency-logos/Peru_INDECOPI.png", website: "https://www.gob.pe/indecopi" },
       projects: [
         {
           id: "peru-164",
@@ -2716,7 +2717,7 @@
       ],
     },
     Poland: {
-      agencyInfo: { acronym: "UOKiK", fullName: "", location: "Plac Powsta\u0144c\u00f3w Warszawy 1, 00-950 Warsaw, Poland", mapLabel: "Warsaw, Poland", website: "https://uokik.gov.pl/en" },
+      agencyInfo: { acronym: "UOKiK", fullName: "", location: "Plac Powsta\u0144c\u00f3w Warszawy 1, 00-950 Warsaw, Poland", mapLabel: "Warsaw, Poland", logoUrl: "assets/agency-logos/Poland_UOKiK.png", website: "https://uokik.gov.pl/en" },
       projects: [
         {
           id: "poland-166",
@@ -2839,7 +2840,7 @@
         "No contribution rows were available for this jurisdiction in the provided workbook.",
     },
     Romania: {
-      agencyInfo: { acronym: "RCC", fullName: "", location: "Pia\u021ba Presei Libere nr. 1, Corp D1, Sector 1, 013701 Bucharest, Romania", mapLabel: "Bucharest, Romania", website: "https://www.consiliulconcurentei.ro/en/" },
+      agencyInfo: { acronym: "RCC", fullName: "", location: "Pia\u021ba Presei Libere nr. 1, Corp D1, Sector 1, 013701 Bucharest, Romania", mapLabel: "Bucharest, Romania", logoUrl: "assets/agency-logos/Romania_RCC.png", website: "https://www.consiliulconcurentei.ro/en/" },
       projects: [
         {
           id: "romania-173",
@@ -2892,7 +2893,7 @@
       ],
     },
     "Saudi Arabia": {
-      agencyInfo: { acronym: "GAC", fullName: "", location: "King Abdullah Road, Al Waha, Riyadh 12444, Saudi Arabia", mapLabel: "Riyadh, Saudi Arabia", website: "https://gac.gov.sa/index_en.aspx" },
+      agencyInfo: { acronym: "GAC", fullName: "", location: "King Abdullah Road, Al Waha, Riyadh 12444, Saudi Arabia", mapLabel: "Riyadh, Saudi Arabia", logoUrl: "assets/agency-logos/Saudi_Arabia_GAC.png", website: "https://gac.gov.sa/index_en.aspx" },
       projects: [
         {
           id: "saudi-arabia-176",
@@ -2977,7 +2978,7 @@
       ],
     },
     Serbia: {
-      agencyInfo: { acronym: "Commission for Protection of Competition", fullName: "", location: "Bulevar kralja Aleksandra I Kara\u0111or\u0111evi\u0107a 25, 11000 Belgrade, Serbia", mapLabel: "Belgrade, Serbia", website: "https://www.kzk.org.rs/en/" },
+      agencyInfo: { acronym: "Commission for Protection of Competition", fullName: "", location: "Bulevar kralja Aleksandra I Kara\u0111or\u0111evi\u0107a 25, 11000 Belgrade, Serbia", mapLabel: "Belgrade, Serbia", logoUrl: "assets/agency-logos/Serbia_KZK.png", website: "https://www.kzk.org.rs/en/" },
       projects: [
         {
           id: "serbia-181",
@@ -2997,7 +2998,7 @@
       ],
     },
     Singapore: {
-      agencyInfo: { acronym: "CCCS", fullName: "", location: "10 Hoe Chiang Road, #08-08, Singapore 089315", mapLabel: "Singapore", website: "https://www.ccs.gov.sg/" },
+      agencyInfo: { acronym: "CCCS", fullName: "", location: "10 Hoe Chiang Road, #08-08, Singapore 089315", mapLabel: "Singapore", logoUrl: "assets/agency-logos/Singapore_CCCS.png", website: "https://www.ccs.gov.sg/" },
       projects: [
         {
           id: "singapore-182",
@@ -3194,7 +3195,7 @@
       ],
     },
     Slovakia: {
-      agencyInfo: { acronym: "Antimonopoly Office", fullName: "", location: "Drie\u0148ov\u00e1 24, 826 03 Bratislava, Slovakia", mapLabel: "Bratislava, Slovakia", website: "https://www.antimon.gov.sk/en/" },
+      agencyInfo: { acronym: "Antimonopoly Office", fullName: "", location: "Drie\u0148ov\u00e1 24, 826 03 Bratislava, Slovakia", mapLabel: "Bratislava, Slovakia", logoUrl: "assets/agency-logos/Slovakia_AMO.png", website: "https://www.antimon.gov.sk/en/" },
       projects: [
         {
           id: "slovakia-194",
@@ -3279,7 +3280,7 @@
       ],
     },
     Slovenia: {
-      agencyInfo: { acronym: "Competition Protection Agency", fullName: "", location: "Dunajska cesta 58, 1000 Ljubljana, Slovenia", mapLabel: "Ljubljana, Slovenia", website: "https://www.varstvo-konkurence.si/en/" },
+      agencyInfo: { acronym: "Competition Protection Agency", fullName: "", location: "Dunajska cesta 58, 1000 Ljubljana, Slovenia", mapLabel: "Ljubljana, Slovenia", logoUrl: "assets/agency-logos/Slovenia_AVK.png", website: "https://www.varstvo-konkurence.si/en/" },
       projects: [
         {
           id: "slovenia-199",
@@ -3625,7 +3626,7 @@
         "No contribution rows were available for this jurisdiction in the provided workbook.",
     },
     Taiwan: {
-      agencyInfo: { acronym: "TFTC", fullName: "", location: "12-14F, No. 2-2, Sec. 1, Jinan Rd., Zhongzheng District, Taipei City 100219, Taiwan", mapLabel: "Taipei, Taiwan", website: "https://www.ftc.gov.tw/internet/english/index.aspx" },
+      agencyInfo: { acronym: "TFTC", fullName: "", location: "12-14F, No. 2-2, Sec. 1, Jinan Rd., Zhongzheng District, Taipei City 100219, Taiwan", mapLabel: "Taipei, Taiwan", logoUrl: "assets/agency-logos/Taiwan-TFTC.png", website: "https://www.ftc.gov.tw/internet/english/index.aspx" },
       projects: [
         {
           id: "taiwan-212",
@@ -3774,7 +3775,7 @@
       ],
     },
     Turkey: {
-      agencyInfo: { acronym: "TCA", fullName: "", location: "\u00dcniversiteler Mahallesi, 1597. Cadde No. 9, \u00c7ankaya 06800, Ankara, T\u00fcrkiye", mapLabel: "Ankara, T\u00fcrkiye", website: "https://www.rekabet.gov.tr/en" },
+      agencyInfo: { acronym: "TCA", fullName: "", location: "\u00dcniversiteler Mahallesi, 1597. Cadde No. 9, \u00c7ankaya 06800, Ankara, T\u00fcrkiye", mapLabel: "Ankara, T\u00fcrkiye", logoUrl: "assets/agency-logos/Turkiye_TCA.png", website: "https://www.rekabet.gov.tr/en" },
       projects: [
         {
           id: "turkey-221",
@@ -3842,8 +3843,8 @@
         },
       ],
     },
-    UK: {
-      agencyInfo: { acronym: "CMA", fullName: "", location: "The Cabot, 25 Cabot Square, London E14 4QZ, United Kingdom", mapLabel: "London, United Kingdom", website: "https://www.gov.uk/government/organisations/competition-and-markets-authority" },
+    "United Kingdom": {
+      agencyInfo: { acronym: "CMA", fullName: "", location: "The Cabot, 25 Cabot Square, London E14 4QZ, United Kingdom", mapLabel: "London, United Kingdom", logoUrl: "assets/agency-logos/UK_CMA.png", website: "https://www.gov.uk/government/organisations/competition-and-markets-authority" },
       projects: [
         {
           id: "uk-225",

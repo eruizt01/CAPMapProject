@@ -35,7 +35,7 @@ test("normalizeCountryInput resolves raw country-like values to canonical keys",
     "USA",
   );
   assert.equal(resolver.normalizeCountryInput("Alaska"), "USA");
-  assert.equal(resolver.normalizeCountryInput("GB"), "UK");
+  assert.equal(resolver.normalizeCountryInput("GB"), "United Kingdom");
   assert.equal(resolver.normalizeCountryInput("South-Korea"), "South Korea");
 });
 

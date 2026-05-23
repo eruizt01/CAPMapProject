@@ -122,11 +122,6 @@
       this.country = this.data.country;
       (this.data.notices || []).forEach((message) => this.addWarning(message));
 
-      const years = this.data.projects.map((project) => project.year);
-      if (years.length) {
-        this.currentFilters.year = String(Math.max(...years));
-      }
-
       this.filteredProjects = [...this.data.projects];
       this.render();
     }
@@ -517,10 +512,12 @@
     renderAgencyCardContent() {
       const info = this.getActiveAgencyInfo();
       if (!info) return "";
+      const logoHtml = info.logoUrl
+        ? `<img src="${escapeHtml(info.logoUrl)}" alt="${escapeHtml(info.acronym)}" class="agency-card-logo">`
+        : `<div class="agency-card-label">Agency</div><div class="agency-card-acronym">${escapeHtml(info.acronym)}</div>`;
       return `
         <div class="agency-card">
-          <div class="agency-card-label">Agency</div>
-          <div class="agency-card-acronym">${escapeHtml(info.acronym)}</div>
+          ${logoHtml}
           ${info.fullName ? `<div class="agency-card-fullname">${escapeHtml(info.fullName)}</div>` : ""}
           ${info.mapLabel && info.location ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(info.location)}" class="agency-card-location" target="_blank" rel="noopener noreferrer">📍 ${escapeHtml(info.mapLabel)}</a>` : ""}
           ${info.website ? `<a href="${escapeHtml(info.website)}" class="agency-card-website" target="_blank" rel="noopener noreferrer">Visit official website ↗</a>` : ""}

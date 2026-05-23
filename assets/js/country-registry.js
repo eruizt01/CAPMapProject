@@ -468,8 +468,8 @@
       aliases: ["TR", "T\u00fcrkiye"],
       yearDownloads: { 2023: "Reports/Türkiye 2nd Report.pdf" },
     },
-    UK: {
-      canonicalName: "UK",
+    "United Kingdom": {
+      canonicalName: "United Kingdom",
       isoCode: "GB",
       pagePath: "Countries/UK.html",
       pageAvailable: true,

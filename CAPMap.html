@@ -15,7 +15,7 @@
         /* Page-level layout */
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #f0f4f8;
+            background-color: #ececec;
             display: flex;
             flex-direction: column;
             align-items: stretch;
@@ -23,22 +23,21 @@
             padding: 0;
         }
 
-        /* App mount point — centres the map card below the header */
+        /* App mount point — centered below the header with breathing room */
         #app {
             flex: 1;
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            padding: 28px 20px;
+            padding: 24px 80px 0;
         }
 
         /* Outer shell that frames the map and dashboard */
         .map-container {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-            max-width: 1400px;
+            background: transparent;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0;
             width: 100%;
         }
 
@@ -56,8 +55,9 @@
             position: relative;
             width: 100%;
             background: #87CEEB;
-            border-radius: 10px;
+            border-radius: 12px;
             overflow: hidden;
+            box-shadow: 0 6px 32px rgba(0, 0, 0, 0.22);
         }
 
         /* SVG map sizing */
@@ -120,8 +120,8 @@
 
         /* Secondary panel highlighting visited countries and quick stats */
         .info-panel {
-            margin-top: 30px;
-            padding: 20px;
+            margin-top: 8px;
+            padding: 10px 60px;
             background: #ecf0f1;
             border-radius: 10px;
             text-align: center;
@@ -131,7 +131,7 @@
         .country-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 9px;
             justify-content: center;
             margin-top: 10px;
         }
@@ -139,9 +139,9 @@
         .country-tag {
             background: #3498db;
             color: white;
-            padding: 6px 14px;
+            padding: 9px 18px;
             border-radius: 20px;
-            font-size: 13px;
+            font-size: 15px;
             cursor: pointer;
             transition: all 0.3s ease;
         }
@@ -688,13 +688,37 @@
             flex-shrink: 0;
         }
 
-        /* Hero: full-width banner using the CAP gear image */
+        /* Hero: 3-column grid — CodeX | title | gears */
         .site-hero {
-            background: url('assets/img/cap-hero-gears.jpg') center/cover no-repeat;
-            min-height: 220px;
+            background: url('assets/img/cap-hero-gears.jpg') 70% center/cover no-repeat;
+            min-height: 130px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            padding: 24px 52px;
+        }
+
+        .site-hero-codex {
             display: flex;
-            align-items: flex-end;
-            padding: 32px 52px;
+            align-items: center;
+            justify-content: flex-start;
+            text-decoration: none;
+        }
+
+        .site-hero-codex img {
+            height: 64px;
+            width: auto;
+            display: block;
+            opacity: 0.9;
+            transition: opacity 0.2s;
+        }
+
+        .site-hero-codex:hover img {
+            opacity: 1;
+        }
+
+        .site-hero-text {
+            text-align: center;
         }
 
         .site-hero-title {
@@ -702,105 +726,64 @@
             font-weight: 700;
             color: #ffffff;
             letter-spacing: -0.5px;
-            text-align: left;
-            margin: 0;
+            text-align: center;
+            margin: 0 0 4px;
             line-height: 1.1;
             text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
         }
 
-        /* Nav bar: three-zone strip below the hero */
-        .site-nav {
-            background: #1a1a1a;
-            border-top: 1px solid #2e2e2e;
-            padding: 0 52px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 54px;
-        }
-
-        .site-nav-codex {
-            display: flex;
-            align-items: center;
-            flex-shrink: 0;
-        }
-
-        .site-nav-codex img {
-            height: 30px;
-            width: auto;
-            display: block;
-            opacity: 0.88;
-            transition: opacity 0.2s;
-        }
-
-        .site-nav-codex:hover img {
-            opacity: 1;
-        }
-
-        .site-nav-label {
-            font-size: 15px;
-            font-weight: 500;
-            color: #d4d4d4;
-            letter-spacing: 0.04em;
-            text-align: center;
-            flex: 1;
-        }
-
-        .site-nav-cap {
-            font-size: 13px;
-            color: #8a8a8a;
-            text-decoration: none;
-            letter-spacing: 0.03em;
-            flex-shrink: 0;
-            transition: color 0.2s;
-        }
-
-        .site-nav-cap:hover {
-            color: #d4d4d4;
+        .site-hero-subtitle {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.72);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin: 0;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
         }
 
         @media (max-width: 768px) {
             .site-hero {
-                min-height: 140px;
-                padding: 20px 22px;
+                grid-template-columns: auto 1fr;
+                min-height: 90px;
+                padding: 16px 22px;
+                gap: 14px;
+            }
+
+            .site-hero-right { display: none; }
+
+            .site-hero-codex img {
+                height: 24px;
+            }
+
+            .site-hero-text {
+                text-align: left;
             }
 
             .site-hero-title {
-                font-size: 2rem;
-            }
-
-            .site-nav {
-                padding: 0 18px;
-                height: auto;
-                flex-wrap: wrap;
-                gap: 10px;
-                padding-top: 12px;
-                padding-bottom: 12px;
-            }
-
-            .site-nav-label {
-                order: -1;
-                flex-basis: 100%;
+                font-size: 1.6rem;
                 text-align: left;
+            }
+
+            .site-hero-subtitle {
+                font-size: 0.7rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Site header: hero banner + navigation strip -->
+    <!-- Site header: hero banner -->
     <header class="site-header">
         <div class="site-hero">
-            <h1 class="site-hero-title">Computational Antitrust</h1>
-        </div>
-        <nav class="site-nav">
-            <a href="https://law.stanford.edu/codex-the-stanford-center-for-legal-informatics/" class="site-nav-codex" target="_blank" rel="noopener noreferrer">
+            <a href="https://law.stanford.edu/codex-the-stanford-center-for-legal-informatics/" class="site-hero-codex" target="_blank" rel="noopener noreferrer">
                 <img src="assets/img/codex-logo.png" alt="CodeX – The Stanford Center for Legal Informatics">
             </a>
-            <span class="site-nav-label">Interactive World Map</span>
-            <a href="https://law.stanford.edu/codex-the-stanford-center-for-legal-informatics/projects/computational-antitrust/" class="site-nav-cap" target="_blank" rel="noopener noreferrer">
-                Computational Antitrust ↗
-            </a>
-        </nav>
+            <div class="site-hero-text">
+                <h1 class="site-hero-title">Computational Antitrust</h1>
+                <p class="site-hero-subtitle">Interactive World Map</p>
+            </div>
+            <div class="site-hero-right"></div>
+        </div>
     </header>
 
     <!-- Single-page app mount point populated by WorldMapApp -->
@@ -916,7 +899,6 @@
            renderMapView() {
                return `
                    <div class="map-container" data-testid="map-root">
-                       <h1>Computational Antitrust Project - Interactive World Map</h1>
                        <div class="map-wrapper">
                            <svg id="world-map" data-testid="world-map" baseprofile="tiny" fill="#ececec" height="857" stroke="black"
                                 stroke-linecap="round" stroke-linejoin="round" stroke-width=".2"
