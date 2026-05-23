@@ -522,7 +522,7 @@
           <div class="agency-card-label">Agency</div>
           <div class="agency-card-acronym">${escapeHtml(info.acronym)}</div>
           ${info.fullName ? `<div class="agency-card-fullname">${escapeHtml(info.fullName)}</div>` : ""}
-          ${info.location ? `<div class="agency-card-location">${escapeHtml(info.location)}</div>` : ""}
+          ${info.mapLabel && info.location ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(info.location)}" class="agency-card-location" target="_blank" rel="noopener noreferrer">📍 ${escapeHtml(info.mapLabel)}</a>` : ""}
           ${info.website ? `<a href="${escapeHtml(info.website)}" class="agency-card-website" target="_blank" rel="noopener noreferrer">Visit official website ↗</a>` : ""}
         </div>
       `;

@@ -161,8 +161,15 @@ h1 {
 }
 
 .agency-card-location {
+  display: inline-block;
   font-size: 13px;
   color: #7b8a97;
+  text-decoration: none;
+}
+
+.agency-card-location:hover {
+  color: #3498db;
+  text-decoration: underline;
 }
 
 .agency-card-website {
