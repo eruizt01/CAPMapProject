@@ -580,7 +580,7 @@
       ],
     },
     Bulgaria: {
-      profile: "Profile coming soon.",
+      profile: "Bulgaria's Commission on Protection of Competition focuses its computational antitrust work on public procurement and bid-rigging detection, which it still performs largely through manual analysis rather than dedicated automated tools. Drawing on its tender-case experience, the CPC developed bid-rigging Guidelines with red flags from international practice and an internal screening methodology, based on economic and statistical analysis, used in preliminary investigations to compare winning and losing bids and spot unusual patterns between them. It leans on a strong base of public databases, including the Trade Registry, the Digital Public Tenders Platform, and food and fuel price comparison tools, which allow investigators to query ownership, tender, and market data without formal requests. The agency is now beginning to automate: by 2024, it had a project underway to apply machine learning to bid-rigging screening, was in early talks on a nationally tailored AI tool, and had updated its forensic software and hardware with limited but useful computational tools.",
       agencyInfo: { acronym: "CPC", fullName: "", location: "bul. \"Vitosha\" 18, Sofia, Bulgaria", mapLabel: "Sofia, Bulgaria", logoUrl: "assets/agency-logos/Bulgaria_CPC.png", website: "https://www.cpc.bg/en/homepage" },
       projects: [
         {
