@@ -1202,7 +1202,7 @@
           year: 2023,
           details:
             "Cloud-based document management - internal correspondence system common to all services of the central government. Supports creation of electronic workflows and filing/handling of internal documents. It also allows document sharing with other agencies in the public sector",
-          agency: "Commision for the Protection of Competition",
+          agency: "Commission for the Protection of Competition",
           software: null,
           ownershipModel: null,
           practiceArea: "All-purpose",
@@ -1264,7 +1264,7 @@
         },
         {
           id: "czechia-83",
-          name: "Project Datacros II",
+          name: "Datacross II",
           category: null,
           report: "2nd. Annual Report",
           year: 2023,
@@ -1346,7 +1346,7 @@
           name: "Datacross III",
           category: null,
           report: "4th. Annual Report",
-          year: 2024,
+          year: 2025,
           details:
             "EU-funded project developing an AI-based investigative toolbox for financial investigations related to organized crime and economic misconduct. The system integrates datasets such as business registers, company ownership records, real estate data, public procurement data, cryptocurrency transactions, and satellite imagery. Analytical functions include machine learning detection models, natural language processing for document analysis, and image analysis tools.",
           agency: "Czech Office for the Protection of Competition",
@@ -2986,7 +2986,7 @@
           report: "4th. Annual Report",
           year: 2025,
           details: "*See Notes",
-          agency: "GAC",
+          agency: "Commission for Protection of Competition",
           software: null,
           ownershipModel: null,
           practiceArea: null,
