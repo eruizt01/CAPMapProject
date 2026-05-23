@@ -400,7 +400,7 @@
       ],
     },
     Brazil: {
-      profile: "Profile coming soon.",
+      profile: "Brazil's CADE has built its computational antitrust work around its flagship project Cérebro, a procurement-screening platform for detecting bid-rigging and supporting cartel investigations. The project has moved from data mining and screening toward a fuller enforcement workflow: selecting procurement data, surfacing patterns across firms and tenders, and turning technical outputs into reports that investigators and judges can use. Cérebro draws on Brazil's public procurement data infrastructure, especially Comprasnet and PNCP, and combines network analytics, econometric indicators, BI dashboards, web scraping, metadata analysis, and machine-learning methods for procurement documents. Its most concrete reported use is Novo Rumo, a December 2024 highway-infrastructure cartel operation that analyzed tenders from 2018 to 2023 and identified 12 suspect firms. The main constraints are institutional rather than conceptual: explaining economic evidence to non-technical audiences such as judges, retaining skilled staff in the absence of a dedicated workforce, and public-sector procurement barriers that slow the acquisition of tools such as AI tokens and advanced analytical software.",
       agencyInfo: { acronym: "CADE", fullName: "", location: "SEPN, Entrequadra 515, Conjunto D, Lote 4, Edif\u00edcio Carlos Taurisano, 70770-504 Bras\u00edlia/DF, Brazil", mapLabel: "Bras\u00edlia, Brazil", logoUrl: "assets/agency-logos/Brazil_CADE.png", website: "https://www.gov.br/cade/en/pagina-inicial-ingles" },
       projects: [
         {
