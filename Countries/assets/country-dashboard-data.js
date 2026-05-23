@@ -619,7 +619,7 @@
     },
     Canada: {
       profile: "Profile coming soon.",
-      agencyInfo: { acronym: "CCB", fullName: "", location: "Place du Portage I, 50 Victoria Street, Room C-114, Gatineau, Quebec K1A 0C9, Canada", mapLabel: "Gatineau, Canada", logoUrl: "assets/agency-logos/Canada_CCB.png", website: "https://competition-bureau.canada.ca/en/competition-bureau-canada" },
+      agencyInfo: { acronym: "CCB", fullName: "", location: "Place du Portage I, 50 Victoria Street, Room C-114, Gatineau, Quebec K1A 0C9, Canada", mapLabel: "Gatineau, Canada", logoUrl: "assets/agency-logos/Canada_CBC.png", website: "https://competition-bureau.canada.ca/en/competition-bureau-canada" },
       projects: [
         {
           id: "canada-39",
