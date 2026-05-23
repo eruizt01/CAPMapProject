@@ -85,7 +85,7 @@
       ],
     },
     Armenia: {
-      profile: "Profile coming soon.",
+      profile: "Armenia's Competition Protection Commission has concentrated its computational work on a single platform, e-Compete, live since March 2022. It pairs a public website with an internal case management system, digitizing the agency's entire document flow from opening a proceeding through decision and appeal, and replacing paper filing with e-filing that requires no electronic signature. The platform's real value is its links to other state bodies. Through web services it draws tax, cadaster, and legal-entity data covering shareholders, group structures, assets, and revenues, then runs algorithms to flag transactions likely to be undeclared concentrations for merger control. A separate function monitors prices of selected goods daily to surface possible price fixing. The Commission is clear that human analysis still does the decisive work; e-Compete makes it faster and the monitoring far broader.",
       agencyInfo: { acronym: "CPC", fullName: "", location: "4 Tigran Mets Street, Yerevan 0010, Armenia", mapLabel: "Yerevan, Armenia", logoUrl: "assets/agency-logos/Armenia_CPC.png", website: "https://competition.am/en/" },
       projects: [
         {
@@ -123,7 +123,7 @@
       ],
     },
     Australia: {
-      profile: "Profile coming soon.",
+      profile: "The ACCC has shifted from reactive, complaint-driven enforcement toward proactive, data-led detection, building broad data-and-intelligence capabilities rather than focusing on a single platform. Its Data and Intelligence Branch, formed in 2021 around the Strategic Data Analysis Unit established in 2017, brings together data analysis, intelligence, and legal-technology expertise to support investigations, litigation, and market studies. A significant part of its legal-technology work uses Nuix Discover for document review — predictive coding, concept clustering, automated transcription — alongside AI techniques such as NLP, entity recognition, topic modelling, and web scraping to surface themes and prioritize cases. The agency's most distinctive project is its cartel-screening tool, developed since late 2019 to detect bid-rigging in public procurement. It runs a structured workflow, acquiring a dataset, calculating indicators, then assessing outputs, to flag market, bidding, and pricing anomalies, though the ACCC is explicit that screens only prioritize cases and never substitute for investigation. Looking ahead, this approach is being extended to merger control: the ACCC is adopting risk-based merger assessment and developing economy-wide competition analysis drawing on merger reviews, government data, and other commercial sources.",
       agencyInfo: { acronym: "ACCC", fullName: "", location: "23 Marcus Clarke Street, Canberra ACT 2601, Australia", mapLabel: "Canberra, Australia", logoUrl: "assets/agency-logos/Australia_ACCC.png", website: "https://www.accc.gov.au/" },
       projects: [
         {
