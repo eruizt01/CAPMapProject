@@ -833,7 +833,7 @@
     },
     "Caribbean Community": {
       flagUrl: "assets/flags/caricom.png",
-      profile: "Profile coming soon.",
+      profile: "CARICOM's Competition Commission relies on established econometric software rather than bespoke tools, using it to strengthen regional market studies, advocacy, and evidence-based competition analysis. Its toolkit is practical and statistical, with STATA used for merger and price studies, SPSS for surveys and consumer-behavior analysis, and Gretl for accessible modelling, time-series work, and preliminary checks. The Commission has applied these tools to banking mergers in Jamaica, food prices in Suriname, and airline refund and passenger-choice questions from the early COVID-19 period. Its stated next step is more enforcement-facing, looking toward machine learning for public-procurement cartel detection, using clustering and anomaly detection on bid data to flag suspicious patterns.",
       agencyInfo: { acronym: "CARICOM", fullName: "", location: "Hendrikstraat #69, Paramaribo, Suriname", mapLabel: "Paramaribo, Suriname", logoUrl: "assets/agency-logos/Caribbean_CARICOM_Competition_Commission.png", website: "https://caricomcompetitioncommission.org/" },
       projects: [
         {
