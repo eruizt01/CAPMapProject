@@ -2121,7 +2121,7 @@
       ],
     },
     Kenya: {
-      profile: "Profile coming soon.",
+      profile: "Kenya's Competition Authority of Kenya has developed a Case Management System that automates merger filings, restrictive trade practices, abuse of buyer power matters, and consumer protection complaints. Linked to the Document Management System and E-Filing Portal, it lets parties submit filings and evidence remotely while staff assign, search, track, and monitor cases through dashboards. Together with the ERP system, this has made the Authority's workflow faster, more traceable, and less dependent on paper-based processing.\n\nThe Authority has also strengthened its investigative and procurement-screening capacity. In cartel cases, it uses digital forensic tools, with external forensic support, to collect, preserve, search, and analyze evidence from dawn raids, including large datasets and mobile-phone material. In public procurement, it is working with the Public Procurement Regulatory Authority on a bid-rigging detection toolkit that uses algorithms to flag suspicious tender patterns, including bidder numbers, pricing behavior, document origin, and staggered bids.",
       agencyInfo: { acronym: "CAK", fullName: "", location: "CBK Pension Towers, 15th Floor, Harambee Avenue, Nairobi, Kenya", mapLabel: "Nairobi, Kenya", logoUrl: "assets/agency-logos/Kenya_CAK.png", website: "https://www.cak.go.ke/" },
       projects: [
         {
