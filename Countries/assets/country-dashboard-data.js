@@ -1909,7 +1909,7 @@
       ],
     },
     Hungary: {
-      profile: "Profile coming soon.",
+      profile: "Hungary's GVH uses specialized software to collect, process, review, organize, and evaluate large volumes of electronic evidence from computers, mobile devices, email systems, and chat applications during on-site investigations. It also uses AI-based language models to process foreign-language evidence and is exploring similar tools for legal research and the review of dawn-raid materials.\n\nThe agency's most distinctive public-facing tools are Cartel Chat and the Virtual Data Room. Cartel Chat, introduced in 2015, is a secure anonymous reporting platform that lets informants and potential leniency applicants share information about suspected anti-competitive agreements without revealing their identity. The Virtual Data Room, introduced in 2017, gives parties and authorized representatives online access to non-confidential case documents, with search, download, printing, notifications, copy requests, and digital markers. The GVH's current direction is toward AI-assisted administration: through the approved 2025 Technical Support Instrument project, it is working with other EU competition authorities on tools to automate routine tasks and build an internal knowledge-management system for faster case handling.",
       agencyInfo: { acronym: "GVH", fullName: "", location: "Riad\u00f3 u. 5-11, H-1026 Budapest, Hungary", mapLabel: "Budapest, Hungary", logoUrl: "assets/agency-logos/Hungary_GVH.png", website: "https://www.gvh.hu/en/" },
       projects: [
         {
