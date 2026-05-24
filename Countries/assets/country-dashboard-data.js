@@ -1459,7 +1459,7 @@
       ],
     },
     "El Salvador": {
-      profile: "Profile coming soon.",
+      profile: "El Salvador's Competition Superintendency has begun making inroads into computational antitrust, with its work so far centered on digital forensics for dawn raids rather than algorithmic detection. Since 2020 it has been developing a market-intelligence tool to guide the targeted opening of cartel investigations, combining public-procurement monitoring, general market information, ICT-based market tracking, and reactive mechanisms, though the tool still relies on traditional manual analysis and remains in development. The agency has acquired forensic hardware and software, including a TX1 Forensic Imager, UltraBlock Kit, FRED workstation, FTK Imager, and Autopsy, to collect, preserve, process, and analyze evidence obtained in dawn raids. These tools have already been used to speed up forensic imaging, protect chain of custody, and search seized information by keywords.",
       agencyInfo: { acronym: "SC", fullName: "", location: "Edificio Madre Selva, Primer Nivel, Calzada El Almendro y 1a Av. El Espino No. 82, Antiguo Cuscatl\u00e1n, La Libertad, El Salvador", mapLabel: "Antiguo Cuscatl\u00e1n, El Salvador", logoUrl: "assets/agency-logos/El_Salvador_SC.png", website: "https://www.sc.gob.sv/" },
       projects: [
         {
