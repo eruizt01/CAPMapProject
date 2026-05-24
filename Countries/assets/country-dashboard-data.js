@@ -1389,7 +1389,7 @@
       ],
     },
     Denmark: {
-      profile: "Profile coming soon.",
+      profile: "The Danish Competition and Consumer Authority has built its computational antitrust work around in-house data science for detection and investigation. Its main ex officio tool is Bid Viewer, a procurement-screening system that uses machine-learning techniques, neural-network models, and collusion screens to analyze public tender data and flag suspicious tenders and firms for staff review. For casework, the DCCA uses ImageClassifier, a ResNet50 model trained on around 420,000 images to distinguish documents from non-documents and identify better OCR candidates in large visual datasets, with results integrated into NUIX.\n\nThe agency has deployed an investigative toolkit that makes dawn-raid and open-source evidence more searchable and connected. Synonym Expander uses Word2Vec or FastText models to help investigators find coded, specialized, or unfamiliar terms in seized text corpora. OSINTipede brings VAT numbers, articles, search queries, employee data, company links, historical changes, and entity co-occurrences into a Neo4j graph that investigators can explore through predefined templates. The DCCA's planned direction is a local browser-accessible investigations platform around NUIX, combining synonym expansion, GraphRAG-style analysis of dawn-raid communications, and subgraph visualization.",
       agencyInfo: { acronym: "DCCA", fullName: "", location: "Carl Jacobsens Vej 35, 2500 Valby, Denmark", mapLabel: "Valby, Denmark", logoUrl: "assets/agency-logos/Denmark_DCCA.png", website: "https://en.kfst.dk/" },
       projects: [
         {
