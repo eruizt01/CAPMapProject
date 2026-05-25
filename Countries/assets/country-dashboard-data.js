@@ -3010,7 +3010,7 @@
       ],
     },
     Serbia: {
-      profile: "Profile coming soon.",
+      profile: "Serbia's Commission for Protection of Competition has focused its recent work on making competition policy accessible to micro, small, and medium-sized enterprises, which account for over 99% of Serbian companies. It has built this around outreach and institutional design: tailored compliance programs, cooperation agreements with bodies such as the Chamber of Commerce and the Serbian Business Registers Agency, and educational videos produced with the UK CMA that explain bid-rigging, abuse of dominance, dawn raids, and cartel detection in plain terms.\n\nOn the policy side, the CPC developed a regulatory checklist with the OECD and the Public Policy Secretariat to screen draft legislation for anti-competitive effects, and uses sector inquiries as a reform instrument, including a courier-services analysis with RATEL whose recommendations fed into the draft Law on Postal Services.",
       agencyInfo: { acronym: "Commission for Protection of Competition", fullName: "", location: "Bulevar kralja Aleksandra I Kara\u0111or\u0111evi\u0107a 25, 11000 Belgrade, Serbia", mapLabel: "Belgrade, Serbia", logoUrl: "assets/agency-logos/Serbia_KZK.png", website: "https://www.kzk.org.rs/en/" },
       projects: [
         {
