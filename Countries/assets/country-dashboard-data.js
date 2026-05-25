@@ -2870,7 +2870,7 @@
         "No contribution rows were available for this jurisdiction in the provided workbook.",
     },
     Romania: {
-      profile: "Profile coming soon.",
+      profile: "Romania's Competition Council has developed a Big Data Platform that gives its staff integrated access to administrative, market, and internal data for investigations and market studies. Finalized at the end of 2021, the platform supports five main analytical modules: cartel screening, bid-rigging detection, sector inquiries, merger analysis, and the mapping of structural and commercial links between undertakings. It brings together data from sources such as the National Trade Registry, the tax authority, the electronic public procurement platform, the Ministry of Justice, the Council's digitized archives, the Price Monitor for fuels and food products, and the State Aid Registry.\n\nThe platform turns scattered public and internal datasets into a searchable investigative environment centered on companies and markets, with company records matched deterministically through the unique identifier assigned by the National Trade Register. Its data architecture also reflects the practical constraints of working with large administrative datasets under GDPR, especially where personal identifiers for shareholders or administrators are not available for automated matching.",
       agencyInfo: { acronym: "RCC", fullName: "", location: "Pia\u021ba Presei Libere nr. 1, Corp D1, Sector 1, 013701 Bucharest, Romania", mapLabel: "Bucharest, Romania", logoUrl: "assets/agency-logos/Romania_RCC.png", website: "https://www.consiliulconcurentei.ro/en/" },
       projects: [
         {
