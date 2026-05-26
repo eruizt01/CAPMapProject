@@ -136,6 +136,9 @@ h1 {
   max-width: 140px;
   object-fit: contain;
 }
+[src*="Spain_ACCO"] {
+  height: 36px !important;
+}
 .identity-agency-divider {
   width: 100%;
   border: none;
