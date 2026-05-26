@@ -545,7 +545,7 @@
 
       if (isMulti) {
         // Multi-agency: render each agency as a column, side by side
-        const agencyCards = Object.values(agencyInfo).map(info => {
+        const agencyCards = Object.values(agencyInfo).map((info, i, arr) => {
           const sealHtml = info.logoUrl
             ? `<img src="${escapeHtml(info.logoUrl)}" alt="${escapeHtml(info.acronym)}" class="identity-seal identity-seal--multi">`
             : `<div class="identity-seal-monogram">${escapeHtml((info.acronym || "").slice(0, 4))}</div>`;
@@ -554,7 +554,8 @@
               ${sealHtml}
               ${info.mapLabel && info.location ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(info.location)}" class="identity-location" target="_blank" rel="noopener noreferrer">📍 ${escapeHtml(info.mapLabel)}</a>` : ""}
               ${info.website ? `<a href="${escapeHtml(info.website)}" class="identity-domain" target="_blank" rel="noopener noreferrer">Official website ↗</a>` : ""}
-            </div>`;
+            </div>
+            ${i < arr.length - 1 ? `<hr class="identity-agency-divider">` : ""}`;
         }).join("");
 
         return `
@@ -622,7 +623,7 @@
                             </div>
                             <div class="country-profile-box">
                                 <div class="country-profile-label">Computational Antitrust Profile</div>
-                                <p class="country-profile-text">${escapeHtml(this.data.profile)}</p>
+                                ${escapeHtml(this.data.profile).split("\n\n").map(p => `<p class="country-profile-text">${p}</p>`).join("")}
                             </div>
                         </div>
                         ` : `

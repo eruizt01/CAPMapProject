@@ -136,6 +136,12 @@ h1 {
   max-width: 140px;
   object-fit: contain;
 }
+.identity-agency-divider {
+  width: 100%;
+  border: none;
+  border-top: 1px solid rgba(0,0,0,0.12);
+  margin: 2px 0;
+}
 
 /* ── Identity stack ──────────────────────────────────────── */
 .identity-stack {
@@ -251,6 +257,9 @@ h1 {
   color: #58697a;
   text-align: justify;
   margin: 0;
+}
+.country-profile-text + .country-profile-text {
+  margin-top: 14px;
 }
 
 .country-title-row {
