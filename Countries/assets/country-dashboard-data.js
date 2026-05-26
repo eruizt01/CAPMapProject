@@ -2346,7 +2346,7 @@
       ],
     },
     Malawi: {
-      profile: "Profile coming soon.",
+      profile: "Malawi's Competition and Fair Trading Commission has moved from manual case tracking and Excel-based reporting to a centralized digital case-management system. Launched in April 2025, the Integrated Management Information System, or IMIS, gives the Commission an end-to-end workflow for complaints, merger notifications, authorization applications, and other regulatory filings. Businesses and consumers can submit matters through a web portal with supporting documents, while hard-copy filings are scanned into the same system. Case officers use dashboards to assign tasks, monitor deadlines, track progress, and generate reports on case trends, delays, and outcomes.\n\nThe system gives the CFTC a single structured environment for intake, case handling, supervision, and record-keeping, replacing fragmented data and manual coordination. In its first months it has handled 63 matters, including unfair-trading complaints, merger assessments, and anticompetitive-conduct investigations. The Commission describes IMIS as the structured-data foundation for later computational tools, such as AI-assisted case screening and market anomaly detection.",
       agencyInfo: { acronym: "CFTC", fullName: "", location: "MERA Office Complex, Along Convention Drive, Next to Lilongwe Civic Offices, Lilongwe, Malawi", mapLabel: "Lilongwe, Malawi", logoUrl: "assets/agency-logos/Malawi_CFTC.png", website: "https://www.cftc.mw/" },
       projects: [
         {
