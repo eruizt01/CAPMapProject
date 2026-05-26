@@ -1203,7 +1203,7 @@
       ],
     },
     Cyprus: {
-      profile: "Profile coming soon.",
+      profile: "Cyprus's Commission for the Protection of Competition anchors its computational profile in document infrastructure it shares with the rest of government. Its main system is eOASIS, the state's web-based office-automation and correspondence-management platform, co-financed with the EU and introduced at the CPC in December 2020. The system digitizes official document management across the public sector: filing, circulation, controlled access, archiving, preservation, and the eventual transfer of important or historical documents to the State Archives.\n\nFor the CPC, eOASIS governs how official documents and correspondence are stored and retrieved. It supports electronic workflows, remote and simultaneous access to the same file, and retrieval by metadata such as title, date, and file number, as well as content search through OCR. On adopting it, the Commission asked interested parties to begin filing documents in digital form.",
       agencyInfo: { acronym: "Commission for the Protection of Competition", fullName: "", location: "53 Strovolos Avenue, Victory Building, 2018 Strovolos, Nicosia, Cyprus", mapLabel: "Nicosia, Cyprus", logoUrl: "assets/agency-logos/Cyprus_CPC.png", website: "https://www.competition.gov.cy/competition/competition.nsf/index_en/index_en?opendocument=" },
       projects: [
         {
