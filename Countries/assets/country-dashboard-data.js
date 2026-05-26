@@ -2368,7 +2368,7 @@
       ],
     },
     Malaysia: {
-      profile: "Profile coming soon.",
+      profile: "Malaysia's Competition Commission has directed its digital effort at preserving and reusing institutional knowledge as cases become more document-heavy and technically complex. On the investigation side, MyCC has moved from relying on commercial forensic tools such as EnCase and Nuix in its smaller-team days to building a dedicated Digital Forensics Unit within the Investigation and Enforcement Division. That capability is still concentrated, with one officer certified to produce professional-level forensic reports after training by international practitioners, but it gives the Commission an internal expert for handling electronic evidence in complex investigations.\n\nThe larger initiative is a Knowledge Management System that turns more than a decade of accumulated material into centralized institutional memory. Reports, internal notes, meeting records, research outputs, and knowledge from international training, once scattered across divisions, are now consolidated and easier for officers to access. Its enforcement-facing component, the Investigation and Enforcement Database, digitizes the case process end to end, from pre-investigation to closure, giving MyCC faster access to prior work and more consistent enforcement procedures.",
       agencyInfo: { acronym: "MyCC", fullName: "", location: "Level 15, Menara SSM @Sentral, No. 7 Jalan Stesen Sentral 5, Kuala Lumpur Sentral, 50623 Kuala Lumpur, Malaysia", mapLabel: "Kuala Lumpur, Malaysia", logoUrl: "assets/agency-logos/Malaysia_MyCC.png", website: "https://www.mycc.gov.my/" },
       projects: [
         {
