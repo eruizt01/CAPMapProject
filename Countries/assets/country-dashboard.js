@@ -512,10 +512,11 @@
       if (!ai) return null;
       // Single-agency: has an `acronym` property directly
       if (ai.acronym !== undefined) return ai;
-      // Multi-agency: pick by current filter
+      // Multi-agency: pick by current filter, fall back to first agency
       const selected = this.currentFilters.agency;
       if (selected !== "all" && ai[selected]) return ai[selected];
-      return null;
+      const firstKey = Object.keys(ai)[0];
+      return firstKey ? ai[firstKey] : null;
     }
 
     renderAgencyCardContent() {
