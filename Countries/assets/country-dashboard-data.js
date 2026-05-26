@@ -3384,7 +3384,7 @@
       profile: "Profile coming soon.",
       agencyInfo: {
         "CNMC": { acronym: "CNMC", fullName: "", location: "Calle Alcalá 47, 28014 Madrid, Spain", mapLabel: "Madrid, Spain", logoUrl: "assets/agency-logos/Spain_CNMC.png", website: "https://www.cnmc.es" },
-        "ACCO": { acronym: "ACCO", fullName: "", location: "Via Laietana 60, 5th floor, 08003 Barcelona, Spain", mapLabel: "Barcelona, Spain", website: "https://acco.gencat.cat/ca/inici/" },
+        "ACCO": { acronym: "ACCO", fullName: "", location: "Via Laietana, 60, Ciutat Vella, 08003 Barcelona, Spain", mapLabel: "Barcelona, Spain", logoUrl: "assets/agency-logos/Spain_ACCO.png", website: "https://acco.gencat.cat/ca/inici/" },
       },
       agencyYearDownloads: {
         ACCO: {

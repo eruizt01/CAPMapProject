@@ -536,20 +536,39 @@
     }
 
     renderIdentityBlock() {
-      const info = this.getActiveAgencyInfo();
-      const { country, flagUrl } = this.data;
-
-      // City only — strip ", Country" suffix since country is already the heading
-      const city = info && info.mapLabel
-        ? info.mapLabel.split(",")[0].trim()
-        : "";
-
-      const domain = info && info.website ? extractDomain(info.website) : "";
+      const { country, flagUrl, agencyInfo } = this.data;
+      const isMulti = agencyInfo && agencyInfo.acronym === undefined;
 
       const flagHtml = flagUrl
         ? `<img src="${escapeHtml(flagUrl)}" alt="${escapeHtml(country)} flag" class="identity-flag">`
         : "";
 
+      if (isMulti) {
+        // Multi-agency: render each agency as a column, side by side
+        const agencyCards = Object.values(agencyInfo).map(info => {
+          const sealHtml = info.logoUrl
+            ? `<img src="${escapeHtml(info.logoUrl)}" alt="${escapeHtml(info.acronym)}" class="identity-seal identity-seal--multi">`
+            : `<div class="identity-seal-monogram">${escapeHtml((info.acronym || "").slice(0, 4))}</div>`;
+          return `
+            <div class="identity-agency-col">
+              ${sealHtml}
+              ${info.mapLabel && info.location ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(info.location)}" class="identity-location" target="_blank" rel="noopener noreferrer">📍 ${escapeHtml(info.mapLabel)}</a>` : ""}
+              ${info.website ? `<a href="${escapeHtml(info.website)}" class="identity-domain" target="_blank" rel="noopener noreferrer">Official website ↗</a>` : ""}
+            </div>`;
+        }).join("");
+
+        return `
+          <div class="identity-stack">
+            <div class="identity-row identity-row--name">
+              ${flagHtml}
+              <h1 class="identity-country">${escapeHtml(country)}</h1>
+            </div>
+            <div class="identity-multi-agencies">${agencyCards}</div>
+          </div>`;
+      }
+
+      // Single-agency
+      const info = this.getActiveAgencyInfo();
       const sealHtml = info && info.logoUrl
         ? `<img src="${escapeHtml(info.logoUrl)}" alt="${escapeHtml(info.acronym)}" class="identity-seal">`
         : info
