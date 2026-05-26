@@ -2708,7 +2708,7 @@
       ],
     },
     Peru: {
-      profile: "Profile coming soon.",
+      profile: "Peru's INDECOPI is building its computational work around detecting collusion risks and market anomalies earlier than ordinary casework allows. Drawing on the National Directorate for the Investigation and Promotion of Free Competition's enforcement experience, knowledge shared by peer agencies, and procurement data supplied through Peru's public procurement supervisory body, it is developing a data-science tool to flag suspicious patterns and possible anticompetitive agreements in public procurement.\n\nThe agency is also developing market-monitoring projects that will extract, transform, analyze, and visualize data from web scraping, public entities, and information requests. The initial focus is healthcare, with other sectors expected to be added gradually, and the goal is to track how competitive conditions evolve and surface suspicious patterns in key market indicators. Both projects are still in development, and computational capacity remains thin: one professional works on them full time while the rest of the team contributes part time, and the agency identifies a dedicated unit of the kind peer agencies already run as the main thing it still needs to build.",
       agencyInfo: { acronym: "INDECOPI", fullName: "", location: "Calle De la Prosa 104, San Borja, Lima 15034, Peru", mapLabel: "Lima, Peru", logoUrl: "assets/agency-logos/Peru_INDECOPI.png", website: "https://www.gob.pe/indecopi" },
       projects: [
         {
