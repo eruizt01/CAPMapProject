@@ -2083,7 +2083,7 @@
       ],
     },
     Japan: {
-      profile: "Profile coming soon.",
+      profile: "The Japan Fair Trade Commission has focused its current computational work on bid-rigging screening. In 2024, its Economic Analysis Office launched the Bid-Rigging Screening Project to bring empirical analysis of bidding data into case investigation. The project is run by economists from the Office, which was created in 2022, together with Professor Jun Nakabayashi of Kyoto University, a specialist in bid-rigging detection who serves as a part-time Economic Adviser to the JFTC.\n\nThe project is still in development. Because Japan has no centralized public procurement system, the team scrapes bidding data from local governments and other procuring institutions, then trial-tests screening methods on it, including simple statistical indicators such as bid-price variance and relative distance, alongside econometric approaches like regression discontinuity design. The remaining task is to assess whether these methods work for JFTC investigations and adapt screening to procurement rules specific to Japan.",
       agencyInfo: { acronym: "JFTC", fullName: "", location: "Toranomon Alcea Tower, 2-2-3 Toranomon, Minato-ku, Tokyo 105-0001, Japan", mapLabel: "Tokyo, Japan", logoUrl: "assets/agency-logos/Japan_JFTC.png", website: "https://www.jftc.go.jp/en/" },
       projects: [
         {
