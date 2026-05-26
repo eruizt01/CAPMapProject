@@ -137,7 +137,9 @@ h1 {
   object-fit: contain;
 }
 [src*="Spain_ACCO"] {
-  height: 45px !important;
+  height: 47px !important;
+  margin-left: 6px;
+  margin-top: 4px;
 }
 .identity-agency-divider {
   width: 100%;
