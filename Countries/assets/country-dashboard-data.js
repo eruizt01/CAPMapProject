@@ -2556,7 +2556,7 @@
       ],
     },
     Netherlands: {
-      profile: "Profile coming soon.",
+      profile: "The Netherlands Authority for Consumers and Markets concentrates its data and technology work in the Taskforce Data and Algorithms, which builds analytical tools across the authority's competition, consumer, and regulated-sector mandates. Its principal antitrust tool is the Tender Tool, which screens procurement data for aberrant bidding behaviour. ACM uses the Tender Tool as a reusable package, sharing it through the European Competition Network so other European authorities can adopt it and contribute to a more coherent approach to bid-rigging detection.\n\nACM has also built a Signalling Monitor that uses the BERT language model to detect price-change signals in news articles, an unusual screen that reads public communications rather than transaction data for signs of coordination. Beyond these tools, the taskforce supports competition cases directly, with geographic market definition in mergers, analysis of pricing and intervention effects, and vertical price arrangements. It is now researching how large language and other foundation models could support detection and case work, and applies privacy and algorithm-impact assessments, including the Dutch IAMA framework, to govern how it uses data and algorithms.",
       agencyInfo: { acronym: "ACM", fullName: "", location: "Muzenstraat 41, 2511 WB The Hague, Netherlands", mapLabel: "The Hague, Netherlands", logoUrl: "assets/agency-logos/Netherlands_ACM.png", website: "https://www.acm.nl/en" },
       projects: [
         {
