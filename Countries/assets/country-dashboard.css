@@ -267,6 +267,22 @@ h1 {
   margin-top: 14px;
 }
 
+.country-profile-disclaimer {
+  border-top: 1px solid #dfe5ea;
+  margin-top: 18px;
+  padding-top: 10px;
+}
+
+.country-profile-disclaimer p {
+  color: #7b8790;
+  font-size: 0.78rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.45;
+  margin: 0;
+  text-align: left;
+}
+
 .country-title-row {
   display: flex;
   align-items: center;
